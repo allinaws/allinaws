@@ -1,467 +1,316 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>AWS大中华区文档</title>
-    <link rel="shortcut icon" href="favcion.ico" />
-    <link rel="stylesheet" href=" css/iconfont.css">
-    <link rel="stylesheet" href="../plug-in/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
 
-<body>
-    <div class="container" id="container">
-        <aside class="left-bar" id="leftBar">
-            <div class="title">
-                <p>AWS大中华区</p>
-            </div>
-            <nav class="nav">
-                <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>技术文档</a><i class="line"></i></div>
-                <ul class="nav-item" id="navItem">
-                    <li><a href="#compute" class="active"><i class="iconfont icon-shequ"></i>计算</a></li>
-                    <li><a href="#databases"><i class="iconfont icon-blogger"></i>数据库</a></li>
-                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>网络与内容分发</a></li>
-                    <li><a href="#tools"><i class="iconfont icon-tool"></i>开发人员工具</a></li>
-                    <li><a href="#design"><i class="iconfont icon-designer"></i>安全性、身份与合规性</a></li>
-                    <li><a href="#study"><i class="iconfont icon-xuexi1"></i>存储</a></li>
-                    <li><a href="#operation"><i class="iconfont icon-yunying"></i>机器学习</a></li>
-                    <li class="download"><a href=""><i class="iconfont icon-github"></i>媒体服务</a></li>
-                </ul>
-                <div class="item comment"><a target="_blank" href="http://chinaaws.cn"><i class="iconfont icon-liuyan"></i>支持中心</a></div>
-            </nav>
-        </aside>
-        <section class="main">
-            <div id="mainContent">
-                <!-- 手机端菜单 -->
-                <div id="menu-box">
-                   <div id="menu">
-                       <input type="checkbox" id="menu-form">
-                       <label for="menu-form" class="menu-spin">
-                        <div class="line diagonal line-1"></div>
-                        <div class="line horizontal"></div>
-                        <div class="line diagonal line-2"></div>
-                      </label>
-                    </div>
-                </div>
-                <!-- 开发社区 -->
-                <div class="box">
-                    <a href="#" name="compute"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-shequ"></i>计算</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="http://blog.csdn.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/csdn.ico" alt="CNDS"> CNDS</div>
-                                <div class="desc">中国最大的IT社区和服务平台</div>
-                            </div>
-                        </a>
-                        <a href="https://juejin.im/">
-                            <div class="item">
-                                <div class="logo"><img src="img/gold-favicon.png" alt="掘金"> 掘金</div>
-                                <div class="desc">只有高手分享的中文技术社区</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.oschina.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/oschina.ico" alt="开源中国"> 开源中国</div>
-                                <div class="desc">
-                                    <div class="info">
-                                        目前中国最大的开源技术社区
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.v2ex.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/v2ex.png" alt="V2EX"> V2EX</div>
-                                <div class="desc">一个关于分享和探索的地方。</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://coding.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/coding.png" alt=" Coding"> Coding</div>
-                                <div class="desc">中国最大的git平台。</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 技术博客 -->
-                <div class="box">
-                    <a href="#" name="databases"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-blogger"></i>数据库</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="./docs/databases/mysql.md">
-                            <div class="item">
-                                <div class="logo"><img src="img/alloyteam-favicon.jpg" alt="mysql"> MYSQL</div>
-                                <div class="desc">mysql数据库</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://isux.tencent.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/isux-favicon.jpg" alt="ISUX"> ISUX</div>
-                                <div class="desc">腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://fex.baidu.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/fex-favicon.png"> FEX
-                                </div>
-                                <div class="desc">
-                                    百度Web前端研发部出品
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://taobaofed.org/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/fed-favicon.png"> 淘宝前端团队（FED）
-                                </div>
-                                <div class="desc">
-                                    用技术为体验提供无限可能
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://aotu.io/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/aotu-favicon.png"> 凹凸实验室
-                                </div>
-                                <div class="desc">
-                                    京东用户体验设计部出品
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://75team.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/75team-favicon.png"> 奇舞团
-                                </div>
-                                <div class="desc">
-                                    奇虎360旗下前端开发团队出品
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://efe.baidu.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/efe-favicon.png"> EFE
-                                </div>
-                                <div class="desc">
-                                    由百度多个遵循统一技术体系的前端团队所组成
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 参考文档 -->
-                <div class="box">
-                    <a href="" name="docs"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-wendangdocument78"></i>参考文档</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="http://jquery.cuishifeng.cn/index.html">
-                            <div class="item">
-                                <div class="logo"><img src="img/jquery.png" alt="jQuery"> jQuery</div>
-                                <div class="desc">优秀的JavaScript代码库</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://v3.bootcss.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/bootstrap-favicon.png" alt="Bootstrap"> Bootstrap</div>
-                                <div class="desc">基于HTML/CSS/Javscript的前端框架</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://v3.bootcss.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/vue-favicon.png" alt="Vue.js"> Vue.js</div>
-                                <div class="desc">构建数据驱动的web界面的渐进式框架</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 实用工具 -->
-                <div class="box">
-                    <a href="" name="tools"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-tool"></i>实用工具</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="http://www.ibootstrap.cn/">
-                            <div class="item">
-                                <div class="no-logo">bootstrap可视化布局</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://www.peise.net/tools/web/">
-                            <div class="item">
-                                <div class="no-logo">网页配色工具</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://www.uupoop.com/">
-                            <div class="item">
-                                <div class="no-logo">在线PS</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://dummyimage.com/">
-                            <div class="item">
-                                <div class="no-logo">动态图像生成器</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://xiuxiu.web.meitu.com/main.html">
-                            <div class="item">
-                                <div class="no-logo">美图秀秀在线图片处理</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://cli.im/deqr">
-                            <div class="item">
-                                <div class="no-logo">二维码在线生成</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.zybuluo.com/mdeditor">
-                            <div class="item">
-                                <div class="no-logo">Markdown在线编辑器</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://dwz.wailian.work/">
-                            <div class="item">
-                                <div class="no-logo">短网址生成</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 设计资源 -->
-                <div class="box">
-                    <a href="" name="design"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-wendangdocument78"></i>设计资源</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="http://www.uigreat.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/uigreat-favicon.jpg"> UIGREAT
-                                </div>
-                                <div class="desc">
-                                    优秀设计师的贴心伴侣。
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://huaban.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/huaban-favicon.png"> 花瓣
-                                </div>
-                                <div class="desc">
-                                    花瓣，陪你做生活的设计师。
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://dribbble.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/dribbble-favicon.png"> Dribbble
-                                </div>
-                                <div class="desc">
-                                    设计作品的交流平台
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.behance.net/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/behance-favicon.png"> Behance
-                                </div>
-                                <div class="desc">
-                                    系列设计作品开放平台
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.pinterest.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/pinterest-favicon.png"> Pinterest
-                                </div>
-                                <div class="desc">
-                                    图片分享类的社交网站
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://www.zcool.com.cn/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/zcool-favicon.jpg"> 站酷
-                                </div>
-                                <div class="desc">
-                                    打开站酷,发现更好的设计!
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://thefwa.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="img/thefwa-favicon.png"> FWA
-                                </div>
-                                <div class="desc">
-                                    互动多媒体网站收录平台
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 学无止境 -->
-                <div class="box">
-                    <a href="#" name="study"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-xuexi1"></i>学无止境</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://www.w3cschool.cn/">
-                            <div class="item">
-                                <div class="no-logo">w3cschool</div>
-                                <div class="desc">学编程，从W3cschool开始</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.imooc.com/">
-                            <div class="item">
-                                <div class="no-logo">慕课网</div>
-                                <div class="desc">程序员的梦工厂</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://study.163.com/">
-                            <div class="item">
-                                <div class="no-logo">网易云课堂</div>
-                                <div class="desc">网易公司研发的一款大型在线教育平台服务</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 网络运营 -->
-                <div class="box">
-                    <a href="" name="operation"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-yunying"></i>网络运营</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://mp.weixin.qq.com/">
-                            <div class="item">
-                                <div class="no-logo">微信公众平台</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.toutiao.com/">
-                            <div class="item">
-                                <div class="no-logo">今日头条号</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.jianshu.com/">
-                            <div class="item">
-                                <div class="no-logo">简书</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://mp.dayu.com/">
-                            <div class="item">
-                                <div class="no-logo">UC大鱼号</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://baijiahao.baidu.com/builder/author/register/index">
-                            <div class="item">
-                                <div class="no-logo">百度百家号</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.weibo.com/login.php">
-                            <div class="item">
-                                <div class="no-logo">新浪微博</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://om.qq.com/userAuth/index">
-                            <div class="item">
-                                <div class="no-logo">腾讯企鹅号</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.douban.com/">
-                            <div class="item">
-                                <div class="no-logo">豆瓣</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <footer class="footer">
-                    <div class="copyright">
-                        <div>
-                            Copyright © 2018- 2050
-                            <a href="https://chinaaws.cn">AWS大中华区</a>
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="docs/compute/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/compute/">
+            
+                <a href="docs/compute/">
+            
+                    
+                    计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="docs/compute/ec2.html">
+            
+                <a href="docs/compute/ec2.html">
+            
+                    
+                    EC2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="docs/compute/ecs.html">
+            
+                <a href="docs/compute/ecs.html">
+            
+                    
+                    ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/storage/">
+            
+                <a href="docs/storage/">
+            
+                    
+                    存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="docs/storage/s3.html">
+            
+                <a href="docs/storage/s3.html">
+            
+                    
+                    S3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="amazonwebservice-&#xFF08;aws&#xFF09;&#x4E2D;&#x6587;&#x6587;&#x6863;">AmazonWebService &#xFF08;AWS&#xFF09;&#x4E2D;&#x6587;&#x6587;&#x6863;</h1>
+<p>&#x6B64;&#x6587;&#x6863;&#x7531;&#x6328;&#x8E22;&#x8336;&#x9986;&#x8FD0;&#x8425;&#x7BA1;&#x7406;</p>
+<p>&#x6DF1;&#x5733;&#x8336;&#x601D;&#x84DD;&#x4FE1;&#x606F;&#x6280;&#x672F;&#x6709;&#x9650;&#x516C;&#x53F8;&#xFF08;&#x65D7;&#x4E0B;&#x54C1;&#x724C;-&#x6328;&#x8E22;&#x8336;&#x9986;&#xFF09;&#x662F;&#x4E00;&#x5BB6;&#x81F4;&#x529B;&#x4E8E;&#x4E91;&#x8BA1;&#x7B97;&#x65B9;&#x5411;&#x7684;&#x5728;&#x7EBF;&#x57F9;&#x8BAD;&#x7EC4;&#x7EC7;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x901A;&#x8FC7;&#x5728;&#x7EBF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x8BA9;&#x6240;&#x6709;&#x4EBA;&#x968F;&#x65F6;&#x968F;&#x5730;&#x5B66;&#x4E60;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x7684;&#x4E91;&#x8BA1;&#x7B97;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4E5F;&#x5E0C;&#x671B;&#x5728;&#x4F60;&#x5B66;&#x4E60;&#x5B8C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x8BFE;&#x7A0B;&#x4E4B;&#x540E;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x80FD;&#x987A;&#x5229;&#x901A;&#x8FC7;&#x76F8;&#x5173;&#x7684;&#x8003;&#x8BD5;&#xFF0C;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#x80FD;&#x5B66;&#x5230;&#x65B0;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x6253;&#x5F00;&#x81EA;&#x5DF1;&#x53E6;&#x4E00;&#x6247;&#x5927;&#x95E8;&#xFF0C;&#x63A5;&#x89E6;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x4E16;&#x754C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x662F;&#x8001;&#x5E08;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x77E5;&#x8BC6;&#x7684;&#x642C;&#x8FD0;&#x5DE5;&#x3002;</p>
+<p>&#x6B22;&#x8FCE;&#x8BBF;&#x95EE;&#x6211;&#x4EEC;&#x5B98;&#x65B9;&#x7F51;&#x7AD9;:</p>
+<p><a href="https://iteablue.com" target="_blank">https://iteablue.com</a></p>
+<p><img src="img/iteablue.png" alt="iteablue"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
-                </footer>
-                <div id="fixedBar"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></div>
-        </section>
-        <script src="js/jquery.js"></script>
-        <script>
-        var oMenu = document.getElementById('menu');
-        var oLeftBar = document.getElementById('leftBar');
-        var menuFrom = document.getElementById('menu-form');
+                
+            </div>
 
-        oMenu.onclick = function() {
-            if (oLeftBar.offsetLeft == 0) {
-                oLeftBar.style.left = -249 + 'px';
-            }
-            else {
-                oLeftBar.style.left = 0;
-            }
-        }
+            
+                
+                
+                <a href="docs/compute/" class="navigation navigation-next navigation-unique" aria-label="Next page: 计算">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
 
-
-        // 监听页面宽度变化
-        window.onresize = function() {
-            judgeWidth();
-            // console.log(document.documentElement.clientWidth);
-        };
-
-        // 判断页面宽度
-        function judgeWidth() {
-            if (document.documentElement.clientWidth > 481) {
-                oLeftBar.style.left = 0;
-            } else {
-                oLeftBar.style.left = -249 + 'px';
-            }
-        }
-
-
-        var oNavItem = document.getElementById('navItem');
-        var aA = oNavItem.getElementsByTagName('a');
-        for (var i = 0; i < aA.length; i++) {
-            aA[i].onclick = function() {
-                for (var j = 0; j < aA.length; j++) {
-                    aA[j].className = '';
-                }
-                this.className = 'active';
-                if (oLeftBar.offsetLeft == 0) {
-                    if (document.documentElement.clientWidth <= 481) {
-                        oLeftBar.style.left = -249 + 'px';
-                        menuFrom.checked = false;
-
-                    }
-                }
-            }
-        }
-
-
-        $(window).scroll(function() {
-            if($(window).scrollTop() >= 200){
-                $('#fixedBar').fadeIn(300);
-            }else{
-                $('#fixedBar').fadeOut(300);
-            }
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"计算","level":"1.2","depth":1,"path":"docs/compute/README.md","ref":"docs/compute/README.md","articles":[{"title":"EC2","level":"1.2.1","depth":2,"path":"docs/compute/ec2.md","ref":"docs/compute/ec2.md","articles":[]},{"title":"ECS","level":"1.2.2","depth":2,"path":"docs/compute/ecs.md","ref":"docs/compute/ecs.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-09-10T02:46:13.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-10T02:46:32.763Z"},"basePath":".","book":{"language":""}});
         });
-        $('#fixedBar').click(function() {
-            $('html,body').animate({scrollTop:'0px'},800);
-        })
-        </script>
-</body>
+    </script>
+</div>
 
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
 </html>
+
