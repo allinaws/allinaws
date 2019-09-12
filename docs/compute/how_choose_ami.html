@@ -81,7 +81,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ec2.html" />
+    <link rel="next" href="How_do_I_remotely_connect_to_create_an_ec2_instance.html" />
     
     
     <link rel="prev" href="Create_an_IAM_user_and_log_into_the_console.html" />
@@ -179,9 +179,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="ec2.html">
+        <li class="chapter " data-level="1.3.3" data-path="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
             
-                <a href="ec2.html">
+                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+            
+                    
+                    如何远程连接创建的EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="ec2.md">
+            
+                <span>
             
                     
                     EC2
@@ -192,7 +205,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="ecs.html">
+        <li class="chapter " data-level="1.3.5" data-path="ecs.html">
             
                 <a href="ecs.html">
             
@@ -288,6 +301,46 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5982;&#x4F55;&#x9009;&#x62E9;ami&#x955C;&#x50CF;">&#x5982;&#x4F55;&#x9009;&#x62E9;AMI&#x955C;&#x50CF;</h1>
+<p>&#x73B0;&#x5728;AWS&#x8F6F;&#x4EF6;&#x5E02;&#x573A;&#x4E0A;&#x6709;&#x7684;&#x955C;&#x50CF;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>RedHat  </p>
+<p>CentOS</p>
+<p>Ubuntu</p>
+<p>SUSELinux</p>
+<p>Debian</p>
+<p>Windwos</p>
+<p>WindowsSQL</p>
+<p>&#x7B49;&#x7B49;&#x3002;&#x3002;</p>
+<h2 id="1&#x5FEB;&#x901F;&#x542F;&#x52A8;">1.&#x5FEB;&#x901F;&#x542F;&#x52A8;</h2>
+<p>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x5EFA;&#x8BAE;&#x4E0D;&#x9009;&#x62E9;&#x8FD9;&#x4E2A;&#x91CC;&#x9762;AMI&#x6765;&#x76F4;&#x63A5;&#x8DD1;&#x751F;&#x4EA7;&#xFF0C;&#x4EC5;&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x540E;&#x505A;&#x4E00;&#x4E2A;AMI</p>
+<p><img src="../../img/how_choose_ami/NKVlcm34T9spMmtxWZ0jb.png" alt=""></p>
+<h2 id="2&#x6211;&#x7684;ami">2.&#x6211;&#x7684;AMI</h2>
+<p>&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x4E2D;&#x5B58;&#x653E;&#x7684;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;AMI</p>
+<p><img src="../../img/how_choose_ami/DAIm1cHXR10GOGSc4rfjW.png" alt=""></p>
+<h2 id="3aws-marketplace">3.AWS Marketplace</h2>
+<p>AWS&#x5546;&#x5E97;&#x7684;AMI&#x4F18;&#x5148;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x641C;&#x7D22;&#x6846;&#x6309;&#x7167;&#x540D;&#x79F0;&#x76F4;&#x63A5;&#x641C;&#x7D22;</p>
+<p><img src="../../img/how_choose_ami/QROV6w2gsz8MX0M9pT1hI.png" alt=""></p>
+<h2 id="4&#x793E;&#x533A;-ami">4.&#x793E;&#x533A; AMI</h2>
+<p>&#x6B64;&#x9009;&#x9879;&#x5185;&#x7684;AMI&#x7531;&#x4E2A;&#x4EBA;&#x4E0A;&#x4F20;&#x7684;&#xFF0C;&#x4E5F;&#x6709;&#x7EC4;&#x7EC7;&#x4E0A;&#x4F20;&#x7684;&#xFF0C;&#x53CD;&#x6B63;&#x662F;&#x4E94;&#x82B1;&#x516B;&#x95E8;&#x7684;&#xFF0C;&#x4E0D;&#x662F;&#x5F88;&#x5B89;&#x5168;&#xFF1B;</p>
+<p><img src="../../img/how_choose_ami/ADYMOxTjiVpGj8V0LBuc7.png" alt=""></p>
+<h2 id="5&#x6839;&#x636E;&#x9700;&#x6C42;&#xFF0C;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x7684;&#x5339;&#x914D;&#x5F97;&#x5230;&#x60F3;&#x8981;&#x7684;ami">5.&#x6839;&#x636E;&#x9700;&#x6C42;&#xFF0C;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x7684;&#x5339;&#x914D;&#x5F97;&#x5230;&#x60F3;&#x8981;&#x7684;AMI</h2>
+<p><img src="../../img/how_choose_ami/7zbhjFPhg16mPIkuPOXW4.png" alt=""></p>
+<p><img src="../../img/how_choose_ami/a1tVKhOB6BXDYWnaYjTz0.png" alt=""></p>
+<h2 id="6&#x4EC5;&#x514D;&#x8D39;&#x5957;&#x9910;">6.&#x4EC5;&#x514D;&#x8D39;&#x5957;&#x9910;</h2>
+<p>AWS&#x514D;&#x8D39;&#x63D0;&#x4F9B;&#x4F7F;&#x7528;&#x7684;AMI</p>
+<p><img src="../../img/how_choose_ami/8R0K6UwSge5nOGysOtsE5.png" alt=""></p>
+<h2 id="7&#x9009;&#x62E9;ami&#x6CE8;&#x610F;&#x4E8B;&#x9879;">7.&#x9009;&#x62E9;AMI&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<p>&#x9009;&#x62E9;&#x63D0;&#x4EA4;&#x4EBA;&#x4E3A;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;AMI</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;</p>
+<p>AmazonWebServices&#x7684; </p>
+<p>CentOS&#x5C31;&#x9009;&#x62E9;Centos.org</p>
+<p>Ubuntu&#x9009;&#x62E9;Canonical Group Limited</p>
+<p>&#x8FD9;&#x4E9B;&#x63D0;&#x4EA4;&#x4EBA;&#x90FD;&#x662F;&#x5B98;&#x65B9;&#x7684;</p>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#xFF0C;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;</p>
+<p><img src="../../img/how_choose_ami/centosami.png" alt=""></p>
+<p><img src="../../img/how_choose_ami/awslinuxami.png" alt=""></p>
+<p><img src="../../img/how_choose_ami/ubuntuami.png" alt=""></p>
+<p>&#x4E2A;&#x4EBA;&#x5EFA;&#x8BAE; &#x4F7F;&#x7528;&#x4E00;&#x4E0B;AMI&#x505A;&#x5B9E;&#x9A8C;</p>
+<p>CentOS&#x3001;ubuntu&#x3001;windowsserver</p>
 
                                 
                                 </section>
@@ -320,7 +373,7 @@
                 </a>
                 
                 
-                <a href="ec2.html" class="navigation navigation-next " aria-label="Next page: EC2">
+                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html" class="navigation navigation-next " aria-label="Next page: 如何远程连接创建的EC2实例">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -331,7 +384,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何选择AMI镜像","level":"1.3.2","depth":2,"next":{"title":"EC2","level":"1.3.3","depth":2,"path":"docs/compute/ec2.md","ref":"docs/compute/ec2.md","articles":[]},"previous":{"title":"创建IAM用户并登录控制台","level":"1.3.1","depth":2,"path":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","ref":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","hide-element","splitter","emphasize","advanced-emoji","back-to-top-button","livereload"],"pluginsConfig":{"emphasize":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"element":[".gitbook.link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how_choose_ami.md","mtime":"2019-09-10T09:03:53.279Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-11T08:47:56.744Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何选择AMI镜像","level":"1.3.2","depth":2,"next":{"title":"如何远程连接创建的EC2实例","level":"1.3.3","depth":2,"path":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","ref":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","articles":[]},"previous":{"title":"创建IAM用户并登录控制台","level":"1.3.1","depth":2,"path":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","ref":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","hide-element","splitter","emphasize","advanced-emoji","back-to-top-button","livereload"],"pluginsConfig":{"emphasize":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"element":[".gitbook.link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how_choose_ami.md","mtime":"2019-09-12T02:03:36.402Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T09:52:15.192Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
