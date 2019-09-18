@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>计算 · GitBook</title>
+        <title>如何创建MySQL · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,6 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Create_an_IAM_user_and_log_into_the_console.html" />
-    
-    
-    <link rel="prev" href="../introduction/readme.html" />
     
 
     </head>
@@ -139,9 +135,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../compute/">
             
-                <a href="./">
+                <a href="../compute/">
             
                     
                     计算
@@ -153,9 +149,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="Create_an_IAM_user_and_log_into_the_console.html">
+        <li class="chapter " data-level="1.3.1" data-path="../compute/Create_an_IAM_user_and_log_into_the_console.html">
             
-                <a href="Create_an_IAM_user_and_log_into_the_console.html">
+                <a href="../compute/Create_an_IAM_user_and_log_into_the_console.html">
             
                     
                     创建IAM用户并登录控制台
@@ -166,9 +162,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="how_choose_ami.html">
+        <li class="chapter " data-level="1.3.2" data-path="../compute/how_choose_ami.html">
             
-                <a href="how_choose_ami.html">
+                <a href="../compute/how_choose_ami.html">
             
                     
                     如何选择AMI镜像
@@ -179,9 +175,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="how_launch_ec2.html">
+        <li class="chapter " data-level="1.3.3" data-path="../compute/how_launch_ec2.html">
             
-                <a href="how_launch_ec2.html">
+                <a href="../compute/how_launch_ec2.html">
             
                     
                     如何启动一个EC2
@@ -192,9 +188,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+        <li class="chapter " data-level="1.3.4" data-path="../compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html">
             
-                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+                <a href="../compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html">
             
                     
                     如何远程连接创建的EC2实例
@@ -218,9 +214,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../database/how_create_mysql.html">
+        <li class="chapter active" data-level="1.3.6" data-path="how_create_mysql.html">
             
-                <a href="../database/how_create_mysql.html">
+                <a href="how_create_mysql.html">
             
                     
                     如何创建MySQL
@@ -447,7 +443,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >计算</a>
+        <a href="../.." >如何创建MySQL</a>
     </h1>
 </div>
 
@@ -462,7 +458,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x8FD9;&#x91CC;&#x662F;&#x8BA1;&#x7B97;</p>
+                                <h1 id="&#x5982;&#x4F55;&#x521B;&#x5EFA;mysql">&#x5982;&#x4F55;&#x521B;&#x5EFA;MySQL</h1>
+<h3 id="&#x6253;&#x5F00;aws&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x641C;&#x7D22;mysql&#x5982;&#x4E0B;">&#x6253;&#x5F00;aws&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x641C;&#x7D22;MySQL&#x5982;&#x4E0B;</h3>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/01.png" alt="&#x63A7;&#x5236;&#x53F0;&#x641C;&#x7D22;mysql"></p>
+<h3 id="&#x6253;&#x5F00;mysql&#xFF08;rds&#xFF09;&#x63A7;&#x5236;&#x9762;&#x677F;">&#x6253;&#x5F00;MySQL&#xFF08;rds&#xFF09;&#x63A7;&#x5236;&#x9762;&#x677F;</h3>
+<p>&#x70B9;&#x51FB;&#x542F;&#x52A8;&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x4F8B;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/02.png" alt="&#x542F;&#x52A8;mysql"></p>
+<h3 id="&#x9009;&#x62E9;&#x5F15;&#x64CE;">&#x9009;&#x62E9;&#x5F15;&#x64CE;</h3>
+<p>&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x9700;&#x6C42;&#xFF0C;&#x9009;&#x62E9;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF1B;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9009;&#x62E9;mysql</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/03.png" alt="&#x9009;&#x62E9;&#x5F15;&#x64CE;"></p>
+<h3 id="&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x6848;&#x4F8B;">&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x6848;&#x4F8B;</h3>
+<p>&#x5EFA;&#x8BAE;&#x751F;&#x4EA7;&#x3001;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x90FD;&#x7528;&#x5982;&#x56FE;&#x6240;&#x9009;&#x7684;&#x751F;&#x6210;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/04.png" alt="&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x6848;&#x4F8B;"></p>
+<h3 id="&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x8BE6;&#x60C5;">&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x8BE6;&#x60C5;</h3>
+<p>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x9009;&#x62E9;&#x76F8;&#x5E94;&#x7684;&#x8BB8;&#x53EF;&#x6A21;&#x5F0F;&#x3001;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;&#x3001;&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x3001;&#x662F;&#x5426;&#x591A;&#x53EF;&#x7528;&#x533A;&#x3001;&#x5B58;&#x50A8;&#x7C7B;&#x578B;&#x3001;&#x5B58;&#x50A8;&#x5927;&#x5C0F;</p>
+<p>&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x4F8B;&#x540D;&#x79F0;&#x3001;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/05.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/06.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/07.png" alt=""></p>
+<h3 id="&#x7F51;&#x7EDC;&#x4E0E;&#x5B89;&#x5168;">&#x7F51;&#x7EDC;&#x4E0E;&#x5B89;&#x5168;</h3>
+<p>&#x73B0;&#x5728;VPC&#x7F51;&#x7EDC;&#x3001;&#x5B50;&#x7F51;&#x4FE1;&#x606F;&#x3001;&#x662F;&#x5426;&#x516C;&#x5F00;&#xFF08;&#x8FD9;&#x91CC;&#x5FC5;&#x987B;&#x9009;&#x62E9;&#x5426;&#xFF09;&#x3001;&#x53EF;&#x7528;&#x533A;&#x3001;&#x5B89;&#x5168;&#x7EC4;&#x3001;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/08.png" alt=""></p>
+<h3 id="&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</h3>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x6570;&#x636E;&#x5E93;&#x662F;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x3001;&#x7AEF;&#x53E3;&#x3001;&#x53C2;&#x6570;&#x7EC4;&#x3001;&#x9009;&#x9879;&#x7EC4;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/09.png" alt=""></p>
+<h3 id="&#x662F;&#x5426;&#x52A0;&#x5BC6;&#x4E0E;&#x5907;&#x4EFD;">&#x662F;&#x5426;&#x52A0;&#x5BC6;&#x4E0E;&#x5907;&#x4EFD;</h3>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/10.png" alt=""></p>
+<h3 id="&#x65E5;&#x5FD7;&#x5BFC;&#x51FA;">&#x65E5;&#x5FD7;&#x5BFC;&#x51FA;</h3>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/11.png" alt=""></p>
+<h3 id="&#x662F;&#x5426;&#x7EF4;&#x62A4;">&#x662F;&#x5426;&#x7EF4;&#x62A4;</h3>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/12.png" alt=""></p>
+<h3 id="&#x521B;&#x5EFA;mysql&#x5B9E;&#x4F8B;">&#x521B;&#x5EFA;MySQL&#x5B9E;&#x4F8B;</h3>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/13.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/mysql/14.png" alt=""></p>
 
                                 
                                 </section>
@@ -490,14 +518,6 @@
 
             
                 
-                <a href="../introduction/readme.html" class="navigation navigation-prev " aria-label="Previous page: AWS入门小知识">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="Create_an_IAM_user_and_log_into_the_console.html" class="navigation navigation-next " aria-label="Next page: 创建IAM用户并登录控制台">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -506,7 +526,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"计算","level":"1.3","depth":1,"next":{"title":"创建IAM用户并登录控制台","level":"1.3.1","depth":2,"path":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","ref":"docs/compute/Create_an_IAM_user_and_log_into_the_console.md","articles":[]},"previous":{"title":"AWS入门小知识","level":"1.2","depth":1,"path":"docs/introduction/readme.md","ref":"./docs/introduction/readme.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","hide-element","splitter","emphasize","advanced-emoji","back-to-top-button"],"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"element":[".gitbook.link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/README.md","mtime":"2019-09-10T02:21:35.410Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T11:22:27.837Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何创建MySQL","level":"1.3.6","depth":2,"next":{"title":"如何创建redis","level":"1.3.7","depth":2,"ref":"","articles":[]},"previous":{"title":"如何创建ELB","level":"1.3.5","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","hide-element","splitter","emphasize","advanced-emoji","back-to-top-button"],"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"element":[".gitbook.link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/database/how_create_mysql.md","mtime":"2019-09-18T11:22:22.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T11:22:27.837Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
