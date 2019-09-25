@@ -1,0 +1,15 @@
+{
+      "plugins":[
+      "expandable-chapters",
+      "custom-favicon",
+      "pageview-count",
+      "splitter",
+      "emphasize",
+      "advanced-emoji",
+      "back-to-top-button"
+    ],
+
+    "pluginsConfig": {
+        "favicon": "img/favicon.ico"
+        }
+}
