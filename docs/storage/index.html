@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>如何变更EC2实例类型 · GitBook</title>
+        <title>存储 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -80,6 +80,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="s3.html" />
     
     
 
@@ -193,9 +195,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../compute/">
             
-                <a href="./">
+                <a href="../compute/">
             
                     
                     计算
@@ -207,9 +209,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="how_launch_ec2.html">
+        <li class="chapter " data-level="1.4.1" data-path="../compute/how_launch_ec2.html">
             
-                <a href="how_launch_ec2.html">
+                <a href="../compute/how_launch_ec2.html">
             
                     
                     如何启动一个EC2
@@ -220,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="how_choose_ami.html">
+        <li class="chapter " data-level="1.4.2" data-path="../compute/how_choose_ami.html">
             
-                <a href="how_choose_ami.html">
+                <a href="../compute/how_choose_ami.html">
             
                     
                     如何选择AMI镜像
@@ -233,9 +235,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+        <li class="chapter " data-level="1.4.3" data-path="../compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html">
             
-                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+                <a href="../compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html">
             
                     
                     如何远程连接创建的EC2实例
@@ -259,9 +261,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.5" data-path="how_change_ec2_type.html">
+        <li class="chapter " data-level="1.4.5" data-path="../compute/how_change_ec2_type.html">
             
-                <a href="how_change_ec2_type.html">
+                <a href="../compute/how_change_ec2_type.html">
             
                     
                     如何变更EC2实例类型
@@ -536,9 +538,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../storage/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../storage/">
+                <a href="./">
             
                     
                     存储
@@ -550,9 +552,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../storage/s3.html">
+        <li class="chapter " data-level="1.7.1" data-path="s3.html">
             
-                <a href="../storage/s3.html">
+                <a href="s3.html">
             
                     
                     如何使用S3（bucket）
@@ -960,7 +962,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >如何变更EC2实例类型</a>
+        <a href="../.." >存储</a>
     </h1>
 </div>
 
@@ -975,30 +977,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5982;&#x4F55;&#x53D8;&#x66F4;ec2&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;">&#x5982;&#x4F55;&#x53D8;&#x66F4;EC2&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</h1>
-<p><strong>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;</strong></p>
-<p>EC2&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x66F4;&#xFF0C;&#x7531;&#x5C0F;&#x53D8;&#x5927;&#xFF0C;</p>
-<p>&#x6BD4;&#x5982;&#xFF0C;&#x7531;2c4g&#x53D8;&#x4E3A; 4c8g </p>
-<p><strong>&#x67E5;&#x770B;&#x5B9E;&#x4F8B;&#x72B6;&#x6001;</strong></p>
-<p>&#x5728;&#x53D8;&#x66F4;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x628A;&#x6B64;&#x5B9E;&#x4F8B;&#x505C;&#x6B62;&#x3002;&#xFF08;stop&#x72B6;&#x6001;&#xFF09;&#x624D;&#x80FD;&#x53D8;&#x66F4;</p>
-<p>&#x786E;&#x8BA4;&#x53D8;&#x66F4;&#x4E4B;&#x524D;&#x7684;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</p>
-<p>&#x67E5;&#x770B;&#x53D8;&#x66F4;&#x4E4B;&#x540E;&#x7684;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/01.png" alt=""></p>
-<h2 id="&#x505C;&#x6B62;&#x5B9E;&#x4F8B;">&#x505C;&#x6B62;&#x5B9E;&#x4F8B;</h2>
-<p>1&#x3001;&#x9009;&#x4E2D;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5B9E;&#x4F8B;</p>
-<p>2&#x3001;&#x64CD;&#x4F5C;&#x3001;&#x5B9E;&#x4F8B;&#x72B6;&#x6001;&#x3001;&#x505C;&#x6B62;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/02.png" alt=""></p>
-<p>&#x5982;&#x4E0B;&#x72B6;&#x6001;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x53D8;&#x66F4;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/03.png" alt=""></p>
-<h2 id="&#x53D8;&#x66F4;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;">&#x53D8;&#x66F4;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</h2>
-<p>1&#x3001;&#x9009;&#x62E9;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5B9E;&#x4F8B;</p>
-<p>2&#x3001;&#x64CD;&#x4F5C;&#x3001;&#x5B9E;&#x4F8B;&#x8BBE;&#x7F6E;&#x3001;&#x66F4;&#x6539;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/04.png" alt=""></p>
-<p><strong>&#x7531;t2.micro &#x53D8;&#x66F4;&#x4E3A;t3.micro</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/05.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/change_ec2_type/06.png" alt=""></p>
-<h2 id="&#x542F;&#x52A8;&#x5B9E;&#x4F8B;">&#x542F;&#x52A8;&#x5B9E;&#x4F8B;</h2>
-<p>&#x542F;&#x52A8;&#x5B9E;&#x4F8B;&#x5373;&#x53EF;&#xFF0C;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x67E5;&#x770B;&#x53D8;&#x66F4;&#x540E;&#x7684;&#x5B9E;&#x4F8B;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+                                <h1 id="&#x5B58;&#x50A8;&#x670D;&#x52A1;">&#x5B58;&#x50A8;&#x670D;&#x52A1;</h1>
 
                                 
                                 </section>
@@ -1027,6 +1006,10 @@
             
                 
                 
+                <a href="s3.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 如何使用S3（bucket）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -1034,7 +1017,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何变更EC2实例类型","level":"1.4.5","depth":2,"next":{"title":"如何做EC2实例镜像（AMI）","level":"1.4.6","depth":2,"ref":"","articles":[]},"previous":{"title":"如何创建ELB","level":"1.4.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button"],"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how_change_ec2_type.md","mtime":"2019-09-18T11:43:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-28T15:50:36.216Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"存储","level":"1.7","depth":1,"next":{"title":"如何使用S3（bucket）","level":"1.7.1","depth":2,"path":"docs/storage/s3.md","ref":"docs/storage/s3.md","articles":[]},"previous":{"title":"如何使用APP Mesh","level":"1.6.8","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button"],"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/storage/README.md","mtime":"2019-09-28T15:44:58.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-28T15:50:36.216Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
