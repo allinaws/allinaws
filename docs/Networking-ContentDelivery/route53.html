@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>如何修改参数组 · GitBook</title>
+        <title>如何使用Route53解析域名？ · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -92,6 +92,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="vpcpeer.html" />
     
     
 
@@ -393,9 +395,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../database/">
             
-                <a href="./">
+                <a href="../database/">
             
                     
                     数据库
@@ -407,9 +409,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="how-to-create-mysql.html">
+        <li class="chapter " data-level="1.4.1" data-path="../database/how-to-create-mysql.html">
             
-                <a href="how-to-create-mysql.html">
+                <a href="../database/how-to-create-mysql.html">
             
                     
                     如何创建MySQL实例
@@ -433,9 +435,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="how-to-modify-parameter-groups.html">
+        <li class="chapter " data-level="1.4.3" data-path="../database/how-to-modify-parameter-groups.html">
             
-                <a href="how-to-modify-parameter-groups.html">
+                <a href="../database/how-to-modify-parameter-groups.html">
             
                     
                     如何修改参数组
@@ -464,9 +466,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../Networking-ContentDelivery/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../Networking-ContentDelivery/">
+                <a href="./">
             
                     
                     网络与内容分发
@@ -504,9 +506,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../Networking-ContentDelivery/route53.html">
+        <li class="chapter active" data-level="1.5.3" data-path="route53.html">
             
-                <a href="../Networking-ContentDelivery/route53.html">
+                <a href="route53.html">
             
                     
                     如何使用Route53解析域名？
@@ -517,9 +519,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../Networking-ContentDelivery/vpcpeer.html">
+        <li class="chapter " data-level="1.5.4" data-path="vpcpeer.html">
             
-                <a href="../Networking-ContentDelivery/vpcpeer.html">
+                <a href="vpcpeer.html">
             
                     
                     如何创建对等连接（VPC Peer）
@@ -530,9 +532,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../Networking-ContentDelivery/vpcflowlog.html">
+        <li class="chapter " data-level="1.5.5" data-path="vpcflowlog.html">
             
-                <a href="../Networking-ContentDelivery/vpcflowlog.html">
+                <a href="vpcflowlog.html">
             
                     
                     如何开启VPC流日志（flow log）
@@ -1063,7 +1065,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >如何修改参数组</a>
+        <a href="../.." >如何使用Route53解析域名？</a>
     </h1>
 </div>
 
@@ -1081,29 +1083,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x53C2;&#x6570;&#x7EC4;">&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x53C2;&#x6570;&#x7EC4;</h1>
-<p><strong>1.&#x5728;RDS&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x6253;&#x5F00;&#x53C2;&#x6570;&#x7EC4;&#xFF1B;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/1.png" alt=""></p>
-<p><strong>2.&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x53C2;&#x6570;&#x7EC4;</strong></p>
-<p>&#x7531;&#x4E8E;&#x9ED8;&#x8BA4;&#x7684;&#x53C2;&#x6570;&#x7EC4;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7EC4;&#xFF0C;&#x518D;&#x5173;&#x8054;&#x5230;rds&#x5B9E;&#x4F8B;&#x4E0A;&#xFF1B;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/2.png" alt=""></p>
-<p><strong>3.&#x4FEE;&#x6539;&#x53C2;&#x6570;</strong></p>
-<p>&#x627E;&#x5230;time_zone&#x53C2;&#x6570;&#x7684;&#x4F4D;&#x7F6E;&#x4FEE;&#x6539;&#x4E3A;shanghai</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/3.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/4.png" alt=""></p>
-<p><strong>4.&#x5173;&#x8054;&#x5230;&#x5B9E;&#x4F8B;</strong></p>
-<p>&#x6253;&#x5F00;RDS&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x9009;&#x4E2D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x56FE;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/5.png" alt=""></p>
-<p><strong>5.&#x9009;&#x4E2D;&#x65B0;&#x5EFA;&#x7684;&#x53C2;&#x6570;&#x7EC4;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/6.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/7.png" alt=""></p>
-<p><strong>6.&#x9009;&#x62E9;&#x7ACB;&#x5373;&#x4F7F;&#x7528;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/8.png" alt=""></p>
-<p><strong>7.&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x542F;RDS&#x5B9E;&#x4F8B;&#x624D;&#x80FD;&#x751F;&#x6548;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/9.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/10.png" alt=""></p>
-<p><strong>8.&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x663E;&#x793A;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/database/how-to-modify-parameter-groups/11.png" alt=""></p>
+                                <h1 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;route53&#x89E3;&#x6790;&#x57DF;&#x540D;">&#x5982;&#x4F55;&#x4F7F;&#x7528;route53&#x89E3;&#x6790;&#x57DF;&#x540D;</h1>
+<p>route53&#x63A7;&#x5236;&#x53F0;</p>
+<p>IP&#x5730;&#x5740;&#x89E3;&#x6790;&#x8BBE;&#x7F6E;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/route53/1.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/route53/2.png" alt=""></p>
+<p>CNAME&#x89E3;&#x6790;&#x8BBE;&#x7F6E;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/route53/3.png" alt=""><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/route53/4.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/route53/5.png" alt=""></p>
 
                                 
                                 </section>
@@ -1148,6 +1135,10 @@
             
                 
                 
+                <a href="vpcpeer.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 如何创建对等连接（VPC Peer）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -1155,7 +1146,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何修改参数组","level":"1.4.3","depth":2,"next":{"title":"如何设置只读副本","level":"1.4.4","depth":2,"ref":"","articles":[]},"previous":{"title":"如何创建Redis实例","level":"1.4.2","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/database/how-to-modify-parameter-groups.md","mtime":"2019-10-15T06:13:53.327Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T11:41:32.681Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何使用Route53解析域名？","level":"1.5.3","depth":2,"next":{"title":"如何创建对等连接（VPC Peer）","level":"1.5.4","depth":2,"path":"docs/Networking-ContentDelivery/vpcpeer.md","ref":"docs/Networking-ContentDelivery/vpcpeer.md","articles":[]},"previous":{"title":"简单的三层网络设计","level":"1.5.2","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Networking-ContentDelivery/route53.md","mtime":"2019-10-17T11:15:02.279Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T11:41:32.681Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
