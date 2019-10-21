@@ -96,7 +96,7 @@
     <link rel="next" href="how-to-create-alb.html" />
     
     
-    <link rel="prev" href="How_do_I_remotely_connect_to_create_an_ec2_instance.html" />
+    <link rel="prev" href="how-to-choose-instance-types-and-instance purchasing-options.html" />
     
 
     </head>
@@ -223,9 +223,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="how_launch_ec2.html">
+        <li class="chapter " data-level="1.3.1" data-path="how-to-launch-ec2-instance.html">
             
-                <a href="how_launch_ec2.html">
+                <a href="how-to-launch-ec2-instance.html">
             
                     
                     如何启动一个EC2实例
@@ -236,9 +236,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="how_choose_ami.html">
+        <li class="chapter " data-level="1.3.2" data-path="how-choose-ami.html">
             
-                <a href="how_choose_ami.html">
+                <a href="how-choose-ami.html">
             
                     
                     如何选择AMI镜像
@@ -262,7 +262,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.4" data-path="what-is-the-elb.html">
+        <li class="chapter " data-level="1.3.4" data-path="how-to-choose-instance-types-and-instance purchasing-options.html">
+            
+                <a href="how-to-choose-instance-types-and-instance purchasing-options.html">
+            
+                    
+                    如何选择实例类型和购买选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="what-is-the-elb.html">
             
                 <a href="what-is-the-elb.html">
             
@@ -275,7 +288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="how-to-create-alb.html">
+        <li class="chapter " data-level="1.3.6" data-path="how-to-create-alb.html">
             
                 <a href="how-to-create-alb.html">
             
@@ -288,7 +301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" >
+        <li class="chapter " data-level="1.3.7" >
             
                 <span>
             
@@ -301,7 +314,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="how-change-ec2-type.html">
+        <li class="chapter " data-level="1.3.8" data-path="how-change-ec2-type.html">
             
                 <a href="how-change-ec2-type.html">
             
@@ -314,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="how-to-create-ami.html">
+        <li class="chapter " data-level="1.3.9" data-path="how-to-create-ami.html">
             
                 <a href="how-to-create-ami.html">
             
@@ -327,7 +340,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.9" data-path="how-to-ami-copy-to-other-region.html">
+        <li class="chapter " data-level="1.3.10" data-path="how-to-ami-copy-to-other-region.html">
             
                 <a href="how-to-ami-copy-to-other-region.html">
             
@@ -340,7 +353,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" >
+        <li class="chapter " data-level="1.3.11" >
             
                 <span>
             
@@ -353,7 +366,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.11" >
+        <li class="chapter " data-level="1.3.12" >
             
                 <span>
             
@@ -366,7 +379,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.12" >
+        <li class="chapter " data-level="1.3.13" >
             
                 <span>
             
@@ -379,7 +392,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.13" >
+        <li class="chapter " data-level="1.3.14" >
             
                 <span>
             
@@ -1103,6 +1116,17 @@
 </ul>
 </blockquote>
 <p>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9700;&#x6C42;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;</p>
+<p><strong>&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x539F;&#x7406;</strong></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/elb/elb.png" alt=""></p>
+<blockquote>
+<p>1&#x3001;ELB&#x7531;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x548C;&#x76EE;&#x6807;&#x7EC4;&#x7EC4;&#x6210;</p>
+<p>2&#x3001;&#x2B50;&#xFE0F;A&#x3001;B&#x4E3A;&#x4E24;&#x4E2A;&#x5B89;&#x5168;&#x7EC4;&#x3002;</p>
+<p>3&#x3001;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x91CC;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x5730;&#x5740;IP&#x4E5F;&#x5360;&#x7528;VPC&#x5B50;&#x7F51;&#x7684;IP&#xFF0C;&#x5E76;&#x4E14;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x91CC;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4F38;&#x7F29;&#xFF1B;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x5185;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x7528;&#x6237;&#x4E0D;&#x53EF;&#x89C1;&#xFF1B;</p>
+<p>4&#x3001;VPC&#x5B50;&#x7F51;&#x5212;&#x5206;&#xFF0C;IP&#x4F7F;&#x7528;&#x6570;&#x91CF;&#xFF0C;&#x4E5F;&#x8981;&#x8003;&#x8651;elb&#x7684;&#x81EA;&#x52A8;&#x4F38;&#x7F29;&#x7684;&#x573A;&#x666F;&#xFF1B;</p>
+<p>5&#x3001;&#x76EE;&#x6807;&#x7EC4;&#x91CC;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x81EA;&#x52A8;&#x4F38;&#x7F29;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x5408;AS&#x4F38;&#x7F29;&#xFF1B;</p>
+<p>6&#x3001;&#x76EE;&#x6807;&#x7EC4;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6240;&#x5728;&#x7684;&#x5B50;&#x7F51;&#x53EF;&#x4EE5;&#x4E0E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x7684;&#x5B50;&#x7F51;&#x76F8;&#x540C;&#x6216;&#x8005;&#x4E0D;&#x901A;&#xFF0C;&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x6240;&#x5728;&#x7684;AZ&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>7&#x3001;ELB&#x5360;&#x7528;&#x7684;IP&#x4F60;&#x53EF;&#x4EE5;&#x5728;EC2&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x7F51;&#x7EDC;&#x4E0E;&#x5B89;&#x5168;&#x3001;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x8FD9;&#x91CC;&#x67E5;&#x8BE2;&#x5230;</p>
+</blockquote>
 
                                 
                                 </section>
@@ -1146,7 +1170,7 @@
 
             
                 
-                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html" class="navigation navigation-prev " aria-label="Previous page: 如何远程连接创建的EC2实例">
+                <a href="how-to-choose-instance-types-and-instance purchasing-options.html" class="navigation navigation-prev " aria-label="Previous page: 如何选择实例类型和购买选项">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1162,7 +1186,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何理解负载均衡器（ELB）","level":"1.3.4","depth":2,"next":{"title":"如何创建ALB-应用程序负载均衡","level":"1.3.5","depth":2,"path":"docs/compute/how-to-create-alb.md","ref":"docs/compute/how-to-create-alb.md","articles":[]},"previous":{"title":"如何远程连接创建的EC2实例","level":"1.3.3","depth":2,"path":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","ref":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/what-is-the-elb.md","mtime":"2019-10-17T03:36:23.650Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T11:41:32.681Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何理解负载均衡器（ELB）","level":"1.3.5","depth":2,"next":{"title":"如何创建ALB-应用程序负载均衡","level":"1.3.6","depth":2,"path":"docs/compute/how-to-create-alb.md","ref":"docs/compute/how-to-create-alb.md","articles":[]},"previous":{"title":"如何选择实例类型和购买选项","level":"1.3.4","depth":2,"path":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","ref":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/what-is-the-elb.md","mtime":"2019-10-21T07:37:53.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T09:21:34.717Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
