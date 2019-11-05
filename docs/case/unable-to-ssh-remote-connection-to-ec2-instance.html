@@ -302,7 +302,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.4" data-path="../compute/how-to-choose-instance-types-and-instance purchasing-options.html">
+        <li class="chapter " data-level="1.3.1.4" data-path="../compute/how-to-login-ec2-with-password.html">
+            
+                <a href="../compute/how-to-login-ec2-with-password.html">
+            
+                    
+                    如何使用密码登陆EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../compute/how-to-choose-instance-types-and-instance purchasing-options.html">
             
                 <a href="../compute/how-to-choose-instance-types-and-instance purchasing-options.html">
             
@@ -315,7 +328,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.5" data-path="../compute/how-do-I-allocate-eip-and-bind-to-ec2.html">
+        <li class="chapter " data-level="1.3.1.6" data-path="../compute/how-do-I-allocate-eip-and-bind-to-ec2.html">
             
                 <a href="../compute/how-do-I-allocate-eip-and-bind-to-ec2.html">
             
@@ -328,7 +341,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.6" data-path="../compute/what-is-the-elb.html">
+        <li class="chapter " data-level="1.3.1.7" data-path="../compute/what-is-the-elb.html">
             
                 <a href="../compute/what-is-the-elb.html">
             
@@ -341,7 +354,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.7" data-path="../compute/how-to-create-alb.html">
+        <li class="chapter " data-level="1.3.1.8" data-path="../compute/how-to-create-alb.html">
             
                 <a href="../compute/how-to-create-alb.html">
             
@@ -354,7 +367,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.8" >
+        <li class="chapter " data-level="1.3.1.9" >
             
                 <span>
             
@@ -367,7 +380,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.9" data-path="../compute/how-change-ec2-type.html">
+        <li class="chapter " data-level="1.3.1.10" data-path="../compute/how-change-ec2-type.html">
             
                 <a href="../compute/how-change-ec2-type.html">
             
@@ -380,7 +393,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.10" data-path="../compute/how-to-create-ami.html">
+        <li class="chapter " data-level="1.3.1.11" data-path="../compute/how-to-create-ami.html">
             
                 <a href="../compute/how-to-create-ami.html">
             
@@ -393,7 +406,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.11" data-path="../compute/how-to-ami-copy-to-other-region.html">
+        <li class="chapter " data-level="1.3.1.12" data-path="../compute/how-to-ami-copy-to-other-region.html">
             
                 <a href="../compute/how-to-ami-copy-to-other-region.html">
             
@@ -406,7 +419,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.12" >
+        <li class="chapter " data-level="1.3.1.13" >
             
                 <span>
             
@@ -419,7 +432,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.13" >
+        <li class="chapter " data-level="1.3.1.14" >
             
                 <span>
             
@@ -432,7 +445,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.14" >
+        <li class="chapter " data-level="1.3.1.15" >
             
                 <span>
             
@@ -445,7 +458,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.1.15" >
+        <li class="chapter " data-level="1.3.1.16" >
             
                 <span>
             
@@ -793,14 +806,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" >
+        <li class="chapter " data-level="1.6.3" data-path="../storage/how-do-use-s3-as-a-static-site.html">
             
-                <span>
+                <a href="../storage/how-do-use-s3-as-a-static-site.html">
             
                     
                     如何使用S3做静态网站
             
-                </span>
+                </a>
             
 
             
@@ -1364,32 +1377,27 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x65E0;&#x6CD5;ssh&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7684;ec2&#x5B9E;&#x4F8B;">&#x65E0;&#x6CD5;SSH&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7684;EC2&#x5B9E;&#x4F8B;</h1>
-<p>&#x6B64;&#x6587;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x6392;&#x67E5;&#x5E38;&#x89C1;&#x7684;&#x65E0;&#x6CD5; ssh &#x8FDE;&#x63A5;&#x5230; Linux &#x5B9E;&#x4F8B;&#x7684;&#x95EE;&#x9898;&#x5E76;&#x7ED9;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
-<p>&#x5728;ssh&#x767B;&#x5F55;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x6839;&#x636E;&#x62A5;&#x9519;&#x7684;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;</p>
-<p><a href="https://awschina.wiki/docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html" target="_blank">&#x5982;&#x4F55;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</a></p>
-<p><strong>&#x4E24;&#x5927;&#x7C7B;&#x62A5;&#x9519;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#x4EE5;&#x53CA;&#x6743;&#x9650;&#x76F8;&#x5173;&#x3002;&#x8BF7;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x62A5;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x67E5;&#x770B;&#x76F8;&#x5E94;&#x7684;&#x8BE6;&#x7EC6;&#x7BC7;&#x7AE0;&#x3002;&#x6700;&#x540E;&#x7684;&#x7AE0;&#x8282;&#x4E5F;&#x7ED9;&#x51FA; &#x4E86;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x65E5;&#x5FD7;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>1&#x3001;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#x3002;</p>
+<p>&#x5728;ssh&#x767B;&#x5F55;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x6839;&#x636E;&#x62A5;&#x9519;&#x7684;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;     </p>
+<p>&#x5982;&#x4F55;&#x767B;&#x9646;&#x8FDC;&#x7A0B;&#x5B9E;&#x4F8B;&#x8BF7;&#x770B;&#x8FD9;&#x8FB9;&#x6587;&#x7AE0;&#xFF1A; <strong><a href="https://awschina.wiki/docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.html" target="_blank">&#x5982;&#x4F55;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x521B;&#x5EFA;&#x7684;EC2&#x5B9E;&#x4F8B;</a></strong></p>
+<p><strong>&#x4E24;&#x5927;&#x7C7B;&#x62A5;&#x9519;&#x7C7B;&#x578B;&#xFF1A;</strong></p>
+<p><strong>&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</strong></p>
 <blockquote>
 <p>Connection Timed Out&#x3002; </p>
-<p>&#x901A;&#x5E38;&#x662F; &#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x5BF9;&#x5E94;&#x7684; IP , &#x5B89;&#x5168;&#x7EC4;&#xFF0C;ACL&#xFF0C;&#x5B50;&#x7F51;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x7F51;&#x7EDC; &#x73AF;&#x5883;&#x7B49;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x662F; &#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x5BF9;&#x5E94;&#x7684; IP , &#x5B89;&#x5168;&#x7EC4;&#xFF0C;ACL&#xFF0C;&#x5B50;&#x7F51;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x7B49;&#x3002;</p>
 </blockquote>
-<p>2&#x3001;&#x6743;&#x9650;&#x76F8;&#x5173;&#x3002;</p>
+<p><strong>&#x6743;&#x9650;&#x76F8;&#x5173;</strong></p>
 <blockquote>
 <p>Permission Denied &#x6216;&#x8005;&#x63D0;&#x793A; Key &#x76F8;&#x5173;&#x9519;&#x8BEF;&#x3002;&#x901A;&#x5E38;&#x662F; &#x79D8;&#x94A5;&#x6216;&#x8005;&#x7528;&#x6237;&#x540D; &#x7684;&#x95EE;&#x9898;&#x3002;</p>
 </blockquote>
 <h2 id="1&#x3001;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;">1&#x3001;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</h2>
 <p><strong>&#x95EE;&#x9898;&#x63CF;&#x8FF0;</strong></p>
-<p>&#x521B;&#x5EFA;&#x5E76;&#x542F;&#x52A8;&#x4E86;EC2&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;SSH&#x6216;&#x901A;&#x8FC7;SSH&#x8FDE;&#x63A5;&#x7684;&#x5B9E;&#x7528;&#x5DE5;&#x5177;&#xFF08;&#x5982; PuTTY&#xFF09;&#x8FDE;&#x63A5;&#x5230;&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#xFF0C;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x7684;&#x9519;&#x8BEF;&#xFF1A;Network error: Connection timed out &#x6216;&#x8005; Error connecting to</p>
+<p>&#x521B;&#x5EFA;&#x5E76;&#x542F;&#x52A8;&#x4E86;EC2&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;SSH&#x6216;&#x901A;&#x8FC7;SSH&#x8FDE;&#x63A5;&#x7684;&#x5B9E;&#x7528;&#x5DE5;&#x5177;&#xFF08;&#x5982; Xshell&#xFF09;&#x8FDE;&#x63A5;&#x5230;&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#xFF0C;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x7684;&#x9519;&#x8BEF;&#xFF1A;Network error: Connection timed out &#x6216;&#x8005; Error connecting to</p>
 <p>[instance], reason: -&gt; Connection timed out: connect&#x3002; </p>
 <p>&#x8BE5;&#x95EE;&#x9898;&#x901A;&#x5E38;&#x662F;&#x7531;&#x4E8E;&#x5B89;&#x5168;&#x7EC4;&#xFF0C;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x7F51;&#x7EDC; ACL &#x7B49;&#x7F51;&#x7EDC;&#x914D;&#x4EF6;&#xFF1B;&#x8BBE;&#x7F6E;&#x4E0D;&#x6B63;&#x786E;&#x5BFC;&#x81F4;&#x7684;&#x3002;&#x8BF7;&#x6309;&#x7167;&#x6545;&#x969C;&#x6392;&#x9664;&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x3002;</p>
 <p><strong>1.1 &#x68C0;&#x67E5;&#x5B89;&#x5168;&#x7EC4;</strong></p>
 <p>&#x5B89;&#x5168;&#x7EC4;&#x4E2D;&#x7684; source &#x4E3A;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684; ip &#x6E90;&#xFF0C; port &#x4E3A;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x8FD9;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#x3002; &#x8BF7;&#x68C0;&#x67E5;&#x8BE5;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x6709;&#x5F00;&#x653E; 22 &#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x4E14;&#x5141;&#x8BB8;&#x60A8;&#x7684; ip &#x6BB5;&#x8BBF;&#x95EE;&#xFF08;source&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x8003;&#x8651;&#xFF0C;&#x8BF7;&#x5C3D;&#x91CF;&#x8BB2;&#x60A8;&#x7684; source &#x5B9A;&#x4E49;&#x4E3A;&#x53EA;&#x5141;&#x8BB8;&#x7279;&#x5B9A;&#x7684; ip &#x5730;&#x5740;&#x6BB5;&#x8BBF;&#x95EE;&#xFF08;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5355;&#x4E2A;ip &#x9700;&#x8981;&#x5728;&#x6700;&#x540E;&#x52A0;/32&#x7684;&#x540E;&#x7F00;&#xFF09;&#xFF0C; &#x8BF7;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x673A;&#x5668;&#x7684; ip &#x662F;&#x5426;&#x7B26;&#x5408;&#x6B64; ip &#x6BB5;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x5728;&#x529E;&#x516C;&#x5C40;&#x57DF;&#x7F51;&#x4E2D;&#xFF0C; &#x60A8;&#x7684; ip &#x5730;&#x5740;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x56FA;&#x5B9A;&#xFF0C;&#x6BCF;&#x6B21;&#x4E0A;&#x7F51;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6B64;&#x65F6;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E; source &#x4E3A;&#x60A8;&#x7684;&#x529E;&#x516C;&#x7F51; &#x7EDC;&#x7684; ip range&#x3002;</p>
-<blockquote>
-<p>&#x25CF; &#x8FD9;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E00;&#x6B65;&#x8BBE;&#x7F6E;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x8BF7;&#x770B;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
-<p>&#x25CF; &#x5982;&#x679C;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x9605;&#x8BFB;&#x56FE;&#x4E0B;&#x65B9;&#x7684;&#x8BE6;&#x7EC6;&#x6559;&#x7A0B;&#x3002;</p>
-<p>&#x25CF; &#x8865;&#x5145;&#x8BF4;&#x660E;&#xFF1A;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x8BE5;&#x5B9E;&#x4F8B;&#x4E5F;&#x65E0;&#x6CD5; ping &#x901A;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;ping&#x8FD9;&#x53F0;&#x5B9E;&#x4F8B;&#xFF0C;&#x9700;&#x8981;&#x4EE5;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0; ICMP &#x534F;&#x8BAE;&#x7684; rule&#x3002;</p>
-</blockquote>
+<p>&#x5982;&#x679C;&#x5728;&#x529E;&#x516C;&#x5C40;&#x57DF;&#x7F51;&#x4E2D;&#xFF0C; &#x60A8;&#x7684;ip&#x5730;&#x5740;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x56FA;&#x5B9A;&#xFF1B;&#x6BCF;&#x6B21;&#x4E0A;&#x7F51;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6B64;&#x65F6;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x6E90;IP&#x4E3A;&#x529E;&#x516C;&#x7F51;&#x7EDC;&#x7684;ip&#x8303;&#x56F4;&#x6BB5;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5B9E;&#x4F8B;&#x65E0;&#x6CD5; ping &#x901A;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;ping&#x9700;&#x8981;&#x5728;&#x5B89;&#x5168;&#x7EC4;&#x6253;&#x5F00;ICMP&#x534F;&#x8BAE;</p>
 <p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/case/1.png" alt=""></p>
 <p>&#x6253;&#x5F00; Amazon EC2 &#x63A7;&#x5236;&#x53F0;&#x3002; </p>
 <p>&#x5728;&#x5BFC;&#x822A;&#x7A97;&#x683C;&#x4E2D;&#xFF0C;&#x9009;&#x62E9; Instances&#x3002; </p>
@@ -1398,8 +1406,8 @@
 <p> &#x5728;&#x5C4F;&#x5E55;&#x5E95;&#x90E8;&#x7684;&#x7A97;&#x683C;&#x4E2D;&#x7684; Inbound (&#x5165;&#x7AD9;) &#x9009;&#x9879;&#x5361;&#x4E2D;&#xFF0C;&#x786E;&#x4FDD;&#x8BBE;&#x7F6E;&#x4E86;&#x5141;&#x8BB8;&#x4ECE;&#x5F53;&#x524D;&#x516C;&#x6709; IP &#x5730;&#x5740;&#x8FDB;&#x884C; SSH &#x8BBF;&#x95EE;&#x7684;&#x89C4;&#x5219;&#x3002; &#x5982;&#x679C;&#x8BBE;&#x5907;&#x6240;&#x4F7F;&#x7528;&#x7684; IP &#x4E0D;&#x5728;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x8BF7;&#x9009;&#x62E9; Edit&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9; Add rule&#x3002; &#x5BF9;&#x4E8E; Source&#xFF0C;&#x9009;&#x62E9; &#x60A8;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;IP &#x3002; 0.0.0.0/0 &#x4EE3;&#x8868;&#x5BF9;&#x6240;&#x6709; ip &#x5F00;&#x653E;&#x3002; &#x9009;&#x62E9; Save&#x3002;</p>
 <p> <strong>1.2 &#x68C0;&#x67E5;&#x5B50;&#x7F51;&#x662F;&#x5426;&#x4E3A;&#x516C;&#x6709;&#x5B50;&#x7F51;</strong></p>
 <p>&#x516C;&#x6709;&#x5B50;&#x7F51;&#x662F;&#x6307;&#x5141;&#x8BB8; Internet &#x8BBF;&#x95EE;&#x7684;&#x5B50;&#x7F51;&#x3002;&#x5982;&#x679C;&#x60A8;&#x7684; EC2 &#x5728;&#x79C1;&#x6709;&#x5B50;&#x7F51;&#x4E2D;&#xFF0C;&#x5916;&#x754C; Internet &#x662F;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x7684;&#xFF0C; ssh &#x4E5F;&#x4F1A;&#x5931;&#x8D25;&#x3002; &#x68C0;&#x67E5;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x9009;&#x62E9; VPC &#x670D;&#x52A1;&#xFF0C;&#x5728; &#x5DE6;&#x4FA7;&#x7684;&#x8DEF;&#x7531;&#x8868;&#xFF08;Route Table&#xFF09;&#x4E2D;&#xFF0C;&#x9009;&#x62E9; EC2 &#x6240;&#x5728;&#x7684;&#x5B50;&#x7F51;&#xFF0C;&#x68C0;&#x67E5;&#x8DEF;&#x7531;&#x8BBE;&#x5B9A;&#x3002;</p>
-<p>&#x25CF; &#x5982;&#x679C;&#x6709;&#x7EA2;&#x6846;&#x6240;&#x6807;&#x6CE8;&#x7684;&#x6307;&#x5411; Internet &#x7F51;&#x5173;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5219;&#x5B50;&#x7F51;&#x4E3A;&#x516C;&#x6709;&#x5B50;&#x7F51;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x8BF7;&#x68C0;&#x67E5;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
-<p>&#x25CF; &#x5982;&#x679C;&#x7F3A;&#x5931;&#x6307;&#x5411;&#x7F51;&#x5173;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x9700;&#x8981;&#x7F16;&#x8F91;&#x5E76;&#x521B;&#x5EFA;&#x5C06; 0.0.0.0/0 &#x6307;&#x5411;&#x60A8;&#x7684; Internet &#x7F51;&#x5173; ID &#x7684;&#x8DEF;&#x7531; &#xFF08;&#x5982;&#x56FE;&#x4E2D;&#x7EA2;&#x6846;&#x6240;&#x793A;&#xFF09;&#x3002;&#x5982;&#x679C;&#x8BE5; VPC &#x4E2D;&#x6CA1;&#x6709;&#x7F51;&#x5173; ( IGW ), &#x5219;&#x9700;&#x8981;&#x5148;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x3002;&#x5982;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x9605;&#x8BFB;&#x56FE;&#x4E0B;&#x65B9;&#x7684;&#x8BE6;&#x7EC6;&#x6B65;&#x9AA4;&#x6559;&#x7A0B;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6709;&#x7EA2;&#x6846;&#x6240;&#x6807;&#x6CE8;&#x7684;&#x6307;&#x5411; Internet &#x7F51;&#x5173;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5219;&#x5B50;&#x7F51;&#x4E3A;&#x516C;&#x6709;&#x5B50;&#x7F51;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x8BF7;&#x68C0;&#x67E5;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7F3A;&#x5931;&#x6307;&#x5411;&#x7F51;&#x5173;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x9700;&#x8981;&#x7F16;&#x8F91;&#x5E76;&#x521B;&#x5EFA;&#x5C06; 0.0.0.0/0 &#x6307;&#x5411;&#x60A8;&#x7684; Internet &#x7F51;&#x5173; ID &#x7684;&#x8DEF;&#x7531; &#xFF08;&#x5982;&#x56FE;&#x4E2D;&#x7EA2;&#x6846;&#x6240;&#x793A;&#xFF09;&#x3002;&#x5982;&#x679C;&#x8BE5; VPC &#x4E2D;&#x6CA1;&#x6709;&#x7F51;&#x5173; ( IGW ), &#x5219;&#x9700;&#x8981;&#x5148;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x3002;&#x5982;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x9605;&#x8BFB;&#x56FE;&#x4E0B;&#x65B9;&#x7684;&#x8BE6;&#x7EC6;&#x6B65;&#x9AA4;&#x6559;&#x7A0B;&#x3002;</p>
 <p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/case/2.png" alt=""></p>
 <p>&#x6253;&#x5F00; Amazon VPC &#x63A7;&#x5236;&#x53F0;&#x3002; </p>
 <p>&#x5728;&#x5BFC;&#x822A;&#x7A97;&#x683C;&#x4E2D;&#xFF0C;&#x9009;&#x62E9;Route Tables&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x60A8;&#x7684;VPC&#x8DEF;&#x7531;&#x8868;&#x3002;&#x5728;Routes (&#x8DEF;&#x7531;) &#x9009;&#x9879;&#x5361;&#x4E2D;&#xFF0C;&#x786E;&#x4FDD;&#x6709;&#x6307;&#x5411;Internet&#x7F51;&#x5173;&#x7684;&#x9ED8;&#x8BA4;&#x8DEF;&#x7531;&#x3002;</p>
@@ -1425,7 +1433,10 @@
 <p>&#x5982;&#x679C;&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x60A8;&#x7ECF;&#x8FC7;&#x68C0;&#x67E5;&#x90FD;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x4EE5;&#x4E0B;&#x539F;&#x56E0;&#xFF1A;</p>
 <p>&#x25CF; 22&#x7AEF;&#x53E3;&#x88AB;&#x5C4F;&#x853D;&#xFF1A;&#x60A8;&#x76EE;&#x524D;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x529E;&#x516C;&#x6216;&#x8005;&#x9152;&#x5E97;&#x7B49;&#x516C;&#x5171;WIFI&#x533A;&#x57DF;&#xFF0C;&#x8BF7;&#x6838;&#x5B9E;&#x8BE5;&#x516C;&#x5171;&#x7F51;&#x7EDC;&#x662F;&#x5426;&#x5C01;&#x7981;&#x4E86;22&#x7AEF;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x6362;&#x4E2A;&#x7F51;&#x7EDC;&#x8BD5;&#x8BD5;&#x770B;&#x3002;</p>
 <p>&#x25CF; &#x60A8;&#x7535;&#x8111;&#x81EA;&#x8EAB;&#x662F;&#x5426;&#x6709;&#x9632;&#x706B;&#x5899;&#x5C4F;&#x853D;&#x4E86;22&#x7AEF;&#x53E3;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x90FD;&#x6B63;&#x786E;&#xFF0C;&#x60A8;&#x4ECD;&#x7136;&#x65E0;&#x6CD5;&#x767B;&#x5F55;&#x5230;&#x5B9E;&#x4F8B;&#xFF1B;&#x6216;&#x8005;&#x60A8;&#x672A;&#x6539;&#x52A8;&#x8FC7;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x914D;&#x7F6E;&#xFF0C;&#x5B9E;&#x4F8B;&#x8D1F;&#x8F7D;&#x4E5F;&#x6B63;&#x5E38;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7A81;&#x7136;&#x65E0;&#x6CD5;ssh&#x4E0A;&#x53BB;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x60A8;&#x7684;&#x5B9E;&#x4F8B;&#x5F53;&#x524D;IP&#x88AB;&#x5899;&#x3002;&#x8BF7;&#x60A8;&#x5C1D;&#x8BD5;&#x7528;&#x5883;&#x5916;&#x7F51;&#x7EDC; (&#x6BD4;&#x5982;&#x6362;&#x4E00;&#x53F0;&#x6D77;&#x5916;&#x7684;EC2&#x7528;&#x4E8E;ssh&#xFF0C;&#x6216;&#x8005;&#x8BBE;&#x7F6E;&#x6D77;&#x5916;&#x4EE3;&#x7406;) &#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x80FD;&#x591F;ssh&#x4E0A;&#x53BB;&#x786E;&#x8BA4;&#x6B64;&#x95EE;&#x9898;&#x3002;&#x5982;&#x679C;&#x88AB;&#x5899;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x4E3A; &#x66F4;&#x6362;&#x5F53;&#x524D; IP &#x5730;&#x5740;&#x3002; &#x25CB; &#x53EF;&#x4EE5;&#x901A;&#x8FC7;stop &#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21; start &#x5B9E;&#x4F8B; &#xFF0C;&#x6765;&#x66F4;&#x6362; IP &#x5730;&#x5740;&#x3002; &#x25CB; &#x7533;&#x8BF7;&#x4E00;&#x4E2A;EIP&#xFF0C; &#x7136;&#x540E;&#x6302;&#x8F7D; EIP &#x7ED9; EC2&#x3002;&#x6B64;&#x65F6; IP &#x4F1A;&#x6362;&#x4E3A; EIP &#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x90FD;&#x6B63;&#x786E;&#xFF0C;&#x60A8;&#x4ECD;&#x7136;&#x65E0;&#x6CD5;&#x767B;&#x5F55;&#x5230;&#x5B9E;&#x4F8B;&#xFF1B;&#x6216;&#x8005;&#x60A8;&#x672A;&#x6539;&#x52A8;&#x8FC7;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x914D;&#x7F6E;&#xFF0C;&#x5B9E;&#x4F8B;&#x8D1F;&#x8F7D;&#x4E5F;&#x6B63;&#x5E38;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7A81;&#x7136;&#x65E0;&#x6CD5;ssh&#x4E0A;&#x53BB;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x60A8;&#x7684;&#x5B9E;&#x4F8B;&#x5F53;&#x524D;IP&#x88AB;&#x5899;&#x3002;&#x8BF7;&#x60A8;&#x5C1D;&#x8BD5;&#x7528;&#x5883;&#x5916;&#x7F51;&#x7EDC; (&#x6BD4;&#x5982;&#x6362;&#x4E00;&#x53F0;&#x6D77;&#x5916;&#x7684;EC2&#x7528;&#x4E8E;ssh&#xFF0C;&#x6216;&#x8005;&#x8BBE;&#x7F6E;&#x6D77;&#x5916;&#x4EE3;&#x7406;) &#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x80FD;&#x591F;ssh&#x4E0A;&#x53BB;&#x786E;&#x8BA4;&#x6B64;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x88AB;&#x5899;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x4E3A; &#x66F4;&#x6362;&#x5F53;&#x524D; IP &#x5730;&#x5740;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x662F;EC2-Classic &#x5F39;&#x6027; IP&#x53EF;&#x4EE5;&#x901A;&#x8FC7;stop &#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;start &#x5B9E;&#x4F8B; &#xFF0C;&#x6765;&#x66F4;&#x6362;IP&#x5730;&#x5740;&#x3002; </p>
+<p>&#x5982;&#x679C;&#x662F;EC2-VPC &#x5F39;&#x6027; IP&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x7533;&#x8BF7;&#x4E00;&#x4E2A;EIP&#xFF0C; &#x7136;&#x540E;&#x7ED1;&#x5B9A;&#x5230;EC2&#x3002;&#x6B64;&#x65F6;IP&#x4F1A;&#x6362;&#x4E3A;EIP&#x7684;&#x5730;&#x5740;&#x3002;</p>
 <h2 id="2&#x3001;&#x6743;&#x9650;&#x76F8;&#x5173;">2&#x3001;&#x6743;&#x9650;&#x76F8;&#x5173;</h2>
 <p><strong>2.1 &#x95EE;&#x9898;&#x63CF;&#x8FF0;</strong></p>
 <p>&#x521B;&#x5EFA;&#x5E76;&#x542F;&#x52A8;&#x4E86;EC2&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;SSH&#x8FDE;&#x63A5;&#x5230;&#x5B9E;&#x4F8B;&#xFF0C;&#x62A5;&#x9519;&#x4FE1;&#x606F;&#x5305;&#x62EC;&#xFF1A;Host key not found in [directory]&#x3001;Permissiondenied (publickey) &#x6216; Authentication failed, permission denied&#x3002;&#x6B64;&#x95EE;&#x9898;&#x901A;&#x5E38;&#x56E0;&#x4E3A;&#x79D8;&#x94A5;&#x6216;&#x8005;&#x7528;&#x6237;&#x540D;&#x9519;&#x8BEF;&#x5BFC;&#x81F4;&#x7684;&#x6743;&#x9650;&#x95EE;&#x9898;&#x3002; </p>
@@ -1436,25 +1447,27 @@
 <p><strong>2.2 &#x7528;&#x6237;&#x540D;&#x9519;&#x8BEF;</strong></p>
 <p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x4E86;&#x5B98;&#x65B9;&#x955C;&#x50CF;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x7528;&#x6237;&#x540D;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 <blockquote>
-<p>&#x25CF; &#x5BF9;&#x4E8E; Amazon Linux 2 &#x6216; Amazon Linux AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F;</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; CentOS AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; centos&#x3002;</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; Debian AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; admin &#x6216; root&#x3002;</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; Fedora AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x4E3A; ec2-user &#x6216; fedora&#x3002;</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; RHEL AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ec2-user &#x6216; root&#x3002;</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; SUSE AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ec2-user &#x6216;root</p>
-<p>&#x25CF; &#x5BF9;&#x4E8E; Ubuntu AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ubuntu&#x3002;</p>
+<p>Amazon Linux 2 &#x6216; Amazon Linux AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F;ec2-user &#x6216; root</p>
+<p>CentOS AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; centos</p>
+<p>Debian AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; admin &#x6216; root</p>
+<p>Fedora AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x4E3A; ec2-user &#x6216; fedora</p>
+<p>RHEL AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ec2-user &#x6216; root</p>
+<p>SUSE AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ec2-user &#x6216;root</p>
+<p>Ubuntu AMI&#xFF0C;&#x7528;&#x6237;&#x540D;&#x79F0;&#x662F; ubuntu</p>
 </blockquote>
-<p>&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;ec2-user&#x548C;root&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#xFF0C;&#x8BF7;&#x4E0E;AMI&#x4F9B;&#x5E94;&#x5546;&#x6838;&#x5B9E;&#x3002;&#x5982;&#x679C;&#x662F;&#x793E;&#x533A;&#x7248;&#x672C;&#x7684;AMI&#xFF0C;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5176;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x8BF7;&#x4E0E;AMI&#x5236;&#x4F5C;&#x8005;&#x8054;&#x7CFB;&#xFF0C;&#x6216;&#x8005;&#x8F6C;&#x7528;&#x5B98;&#x65B9;AMI&#x3002;</p>
 <p><strong>2.3 &#x68C0;&#x67E5;&#x60A8;&#x7684;&#x79D8;&#x94A5;&#x683C;&#x5F0F;</strong></p>
 <p>&#x901A;&#x5E38;&#xFF0C;ssh &#x6240;&#x9700;&#x8981;&#x7684;&#x79D8;&#x94A5;&#x4E3A;pem&#x683C;&#x5F0F;&#x7684;&#xFF08;&#x4ECE;&#x63A7;&#x5236;&#x53F0;&#x4E0B;&#x8F7D;&#x7684;&#x79D8;&#x94A5;&#x5373;&#x4E3A;&#x6B64;&#x683C;&#x5F0F;&#xFF09;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x60A8;&#x662F;&#x7528; &#x7B2C;&#x4E09;&#x65B9;&#x5DE5;&#x5177; ssh-keygen &#x4EA7;&#x751F;&#x7684;&#x79D8;&#x94A5;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x4F1A;&#x751F;&#x6210; OpenSSH &#x7684;&#x5BC6;&#x94A5;&#x683C;&#x5F0F;&#x3002;&#x6B64;&#x65F6;&#x62A5;&#x9519;Private key must begin with &quot;-----BEGIN RSA PRIVATE KEY-----&quot; and end with -----END RSA PRIVATE KEY----&quot;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x4E3A; &#x4F7F;&#x7528; ssh-keygen -m PEM &#x521B;&#x5EFA;&#x79D8;&#x94A5;</p>
-<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;windows&#x673A;&#x5668;&#xFF0C;&#x5229;&#x7528;putty&#x767B;&#x5F55;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x505A;&#x4E00;&#x4E2A;&#x4ECE;pem&#x683C;&#x5F0F;&#x5230;ppk&#x683C;&#x5F0F;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x5728;windows&#x4E0A;&#x5982;&#x4F55;&#x5229;&#x7528; putty &#x767B;&#x5F55;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;windows&#x673A;&#x5668;&#xFF0C;&#x5229;&#x7528;putty&#x6216;&#x8005;xshell&#x767B;&#x5F55;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x505A;&#x4E00;&#x4E2A;&#x4ECE;pem&#x683C;&#x5F0F;&#x5230;ppk&#x683C;&#x5F0F;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x5728;windows&#x4E0A;&#x5982;&#x4F55;&#x5229;&#x7528; putty &#x767B;&#x5F55;</p>
 <p><strong>2.4 &#x68C0;&#x67E5;&#x79D8;&#x94A5;&#x6743;&#x9650;</strong></p>
 <p>&#x5982;&#x679C;&#x9047;&#x5230;&#x9519;&#x8BEF;bad permissions: ignore key: my_private_key.pem Permission denied (publickey). &#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x56E0;&#x4E3A;&#x60A8;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x6743;&#x9650;&#x592A;&#x5927;&#xFF0C;&#x4EFB;&#x4F55;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x62A4;&#x60A8;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;SSH&#x4F1A;&#x5FFD;&#x7565;&#x60A8;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x4E3A;&#xFF0C;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x66F4;&#x6539;&#x79D8;&#x94A5;&#x6743;&#x9650;&#xFF1A;chmod 400 my_private_key.pem</p>
 <p>&#x6B64;&#x65F6;&#x5176;&#x4ED6;&#x62A5;&#x9519;&#x63D0;&#x9192;&#x8BED;&#x53E5;&#x53EF;&#x80FD;&#x5305;&#x542B;&#xFF1A;Permissions 0777 for &apos;my_private_key.pem&apos; are too open. It is required that your private key files are NOT accessible by others. This private key will be ignored.</p>
 <p><strong>2.5 konwn_host&#x76F8;&#x5173;&#x9519;&#x8BEF;</strong></p>
 <p>&#x6B64;&#x60C5;&#x51B5;&#x901A;&#x5E38;&#x89C1;&#x4E8E;&#x5207;&#x6362;&#x4E86;EIP&#x7B49;&#x60C5;&#x51B5;&#xFF0C;&#x6BD4;&#x5982;EIP&#x66FE;&#x7ECF;&#x6302;&#x8F7D;&#x5728;&#x673A;&#x5668;A&#x4E0A;&#xFF0C;&#x7528;&#x4E86;&#x79D8;&#x94A5;A&#xFF0C;&#x6B64;&#x65F6;&#x5207;&#x6362;&#x4E86;EIP&#x5230;&#x673A;&#x5668;B&#x4E0A;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x79D8;&#x94A5;&#x4E3A;&#x79D8;&#x94A5;B&#xFF0C;&#x8FD9;&#x65F6;&#x6B64; IP &#x7684;known_host&#x5BF9;&#x5E94;record&#x4E0D;&#x5339;&#x914D;&#x3002;</p>
 <p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x4E3A;&#xFF1A;&#x6253;&#x5F00; known_host &#x6587;&#x4EF6; &#xFF08;Linux /mac &#x5730; &#x5740;: ~/.ssh/known_host ) &#x5220;&#x9664;&#x6B64; IP &#x7684;&#x5BF9;&#x5E94; record&#x3002;</p>
+<p>man ssh&#x7684;&#x89E3;&#x91CA;</p>
+<pre><code class="lang-english">ssh automatically maintains and checks a database containing identification for all hosts it has ever been used with. Host keys are stored in ~/.ssh/known_hosts in the user&apos;s home directory. Additionally, the file /etc/ssh/ssh_known_hosts is automatically checked for known hosts. Any new hosts are automatically added to the user&apos;s file. If a host&apos;s identification ever changes, ssh warns about this and disables password authentication to prevent server spoofing or man-in-the-middle attacks, which could otherwise be used to circumvent the encryption. The StrictHostKeyChecking option can be used to control logins to machines whose host key is not known or has changed.
+</code></pre>
 
                                 
                                 </section>
@@ -1514,7 +1527,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"无法SSH连接到远程的EC2实例","level":"1.12.1","depth":2,"next":{"title":"Windows实例无法生成密码","level":"1.12.2","depth":2,"path":"docs/case/windows-unable-to-generate-password.md","ref":"docs/case/windows-unable-to-generate-password.md","articles":[]},"previous":{"title":"案例分析","level":"1.12","depth":1,"path":"docs/case/README.md","ref":"docs/case/README.md","articles":[{"title":"无法SSH连接到远程的EC2实例","level":"1.12.1","depth":2,"path":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","ref":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","articles":[]},{"title":"Windows实例无法生成密码","level":"1.12.2","depth":2,"path":"docs/case/windows-unable-to-generate-password.md","ref":"docs/case/windows-unable-to-generate-password.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","mtime":"2019-11-04T11:28:54.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T12:04:58.184Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"无法SSH连接到远程的EC2实例","level":"1.12.1","depth":2,"next":{"title":"Windows实例无法生成密码","level":"1.12.2","depth":2,"path":"docs/case/windows-unable-to-generate-password.md","ref":"docs/case/windows-unable-to-generate-password.md","articles":[]},"previous":{"title":"案例分析","level":"1.12","depth":1,"path":"docs/case/README.md","ref":"docs/case/README.md","articles":[{"title":"无法SSH连接到远程的EC2实例","level":"1.12.1","depth":2,"path":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","ref":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","articles":[]},{"title":"Windows实例无法生成密码","level":"1.12.2","depth":2,"path":"docs/case/windows-unable-to-generate-password.md","ref":"docs/case/windows-unable-to-generate-password.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/case/unable-to-ssh-remote-connection-to-ec2-instance.md","mtime":"2019-11-05T07:12:05.424Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-05T08:45:40.880Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
