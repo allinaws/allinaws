@@ -253,14 +253,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" >
+        <li class="chapter " data-level="1.3.1" data-path="../compute/what-is-the-ec2.html">
             
-                <span>
+                <a href="../compute/what-is-the-ec2.html">
             
                     
                     Amazon EC2
             
-                </span>
+                </a>
             
 
             
@@ -784,9 +784,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../storage/s3.html">
+        <li class="chapter " data-level="1.6.1" data-path="../storage/what-is-the-s3.html">
             
-                <a href="../storage/s3.html">
+                <a href="../storage/what-is-the-s3.html">
             
                     
                     如何理解使用S3服务（bucket）
@@ -1413,6 +1413,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x7EC4;">&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x7EC4;</h1>
+<p>1.&#x767B;&#x5F55; AWS &#x7BA1;&#x7406;&#x63A7;&#x5236;&#x53F0;</p>
+<p>&#x5E76;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x7F51;&#x5740;&#x6253;&#x5F00; IAM &#x63A7;&#x5236;&#x53F0; <a href="https://console.aws.amazon.com/iam/" target="_blank">https://console.aws.amazon.com/iam/</a></p>
+<p>&#x5728;&#x5BFC;&#x822A;&#x7A97;&#x683C;&#x4E2D;&#xFF0C;&#x5355;&#x51FB; Groups (&#x7EC4;)&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB; Create New Group (&#x521B;&#x5EFA;&#x65B0;&#x7EC4;)</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/1.png" alt=""></p>
+<p>2.&#x8BBE;&#x7F6E;&#x7EC4;&#x540D;&#x79F0;</p>
+<p>&#x5728; Group Name &#x6846;&#x4E2D;&#xFF0C;&#x4E3A;&#x7EC4;&#x586B;&#x5165;&#x7EC4;&#x540D;&#x79F0;&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB; Next Step</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/2.png" alt=""></p>
+<font color="red">&#x6CE8;&#x610F;&#xFF01;&#x8D26;&#x6237;&#x4E2D;&#x7684;&#x7EC4;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x552F;&#x4E00;&#x3002;&#x4E0A;&#x8FF0;&#x540D;&#x79F0;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x65E0;&#x6CD5;&#x540C;&#x65F6;&#x521B;&#x5EFA;&#x540D;&#x4E3A; OPS &#x548C; ops &#x7684;&#x7EC4;</font>
+
+<p>3.&#x9009;&#x62E9;&#x7528;&#x6237;&#x7EC4;&#x7B56;&#x7565;</p>
+<p>&#x5728;&#x7B56;&#x7565;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x9009;&#x4E2D;&#x8981;&#x5E94;&#x7528;&#x4E8E;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x7684;&#x6BCF;&#x4E2A;&#x7B56;&#x7565;&#x7684;&#x590D;&#x9009;&#x6846;&#x3002;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/3.png" alt=""></p>
+<p>4.&#x5BA1;&#x6838;&#x9009;&#x62E9;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x7EC4;</p>
+<p>&#x6B64;&#x7B56;&#x7565;&#x4E3A;&#x9664;&#x53BB;&#x6839;&#x7528;&#x6237;&#x540E;&#x6700;&#x5927;&#x6743;&#x9650;&#xFF08;&#x4F30;&#x8BA1;&#x662F;&#xFF09;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/4.png" alt=""></p>
+<p>5.&#x67E5;&#x770B;&#x7528;&#x6237;&#xFF0C;&#x548C;&#x4E00;&#x4E9B;&#x53EF;&#x7528;&#x64CD;&#x4F5C;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/5.png" alt=""></p>
+<p>&#x5BF9;&#x4E8E;&#x7528;&#x6237;&#x7EC4;&#x7684;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/how-to-create-group/6.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x60F3;&#x6B64;&#x7528;&#x6237;&#x7EC4;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#xFF0C;&#x5220;&#x9664;&#x7528;&#x6237;&#xFF0C;&#x91CD;&#x547D;&#x540D;</p>
 
                                 
                                 </section>
@@ -1472,7 +1492,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何创建用户组","level":"1.7.3","depth":2,"next":{"title":"如何申请Certificate Manager","level":"1.7.4","depth":2,"path":"docs/Security-Identity-Compliance/how-to-create-acm.md","ref":"docs/Security-Identity-Compliance/how-to-create-acm.md","articles":[]},"previous":{"title":"创建IAM用户并登录控制台","level":"1.7.2","depth":2,"path":"docs/Security-Identity-Compliance/Create_an_IAM_user_and_log_into_the_console.md","ref":"docs/Security-Identity-Compliance/Create_an_IAM_user_and_log_into_the_console.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro","donate"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"http://image.iroogoo.com/pay/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.iroogoo.com/pay/htea.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Security-Identity-Compliance/how-to-create-group.md","mtime":"2019-10-30T11:06:54.710Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T11:14:10.107Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何创建用户组","level":"1.7.3","depth":2,"next":{"title":"如何申请Certificate Manager","level":"1.7.4","depth":2,"path":"docs/Security-Identity-Compliance/how-to-create-acm.md","ref":"docs/Security-Identity-Compliance/how-to-create-acm.md","articles":[]},"previous":{"title":"创建IAM用户并登录控制台","level":"1.7.2","depth":2,"path":"docs/Security-Identity-Compliance/Create_an_IAM_user_and_log_into_the_console.md","ref":"docs/Security-Identity-Compliance/Create_an_IAM_user_and_log_into_the_console.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro","donate","livereload"],"pluginsConfig":{"emphasize":{},"livereload":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"http://image.iroogoo.com/pay/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.iroogoo.com/pay/htea.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/Security-Identity-Compliance/how-to-create-group.md","mtime":"2019-11-10T08:25:13.035Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-11T10:25:37.356Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1515,6 +1535,10 @@
     
         
         <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

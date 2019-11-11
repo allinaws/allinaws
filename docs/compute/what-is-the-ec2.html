@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>如何分配弹性IP（EIP），并绑定到EC2实例 · GitBook</title>
+        <title>Amazon EC2 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -97,10 +97,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="what-is-the-elb.html" />
+    <link rel="next" href="how-to-launch-ec2-instance.html" />
     
     
-    <link rel="prev" href="how-to-choose-instance-types-and-instance purchasing-options.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -253,7 +253,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="what-is-the-ec2.html">
+        <li class="chapter active" data-level="1.3.1" data-path="what-is-the-ec2.html">
             
                 <a href="what-is-the-ec2.html">
             
@@ -332,7 +332,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.1.6" data-path="how-do-I-allocate-eip-and-bind-to-ec2.html">
+        <li class="chapter " data-level="1.3.1.6" data-path="how-do-I-allocate-eip-and-bind-to-ec2.html">
             
                 <a href="how-do-I-allocate-eip-and-bind-to-ec2.html">
             
@@ -1394,7 +1394,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >如何分配弹性IP（EIP），并绑定到EC2实例</a>
+        <a href="../.." >Amazon EC2</a>
     </h1>
 </div>
 
@@ -1412,27 +1412,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5982;&#x4F55;&#x5206;&#x914D;eip&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;&#x5230;ec2">&#x5982;&#x4F55;&#x5206;&#x914D;EIP&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;&#x5230;EC2</h1>
-<p>&#x5F39;&#x6027; IP &#x5730;&#x5740; &#x662F;&#x4E13;&#x4E3A;&#x52A8;&#x6001;&#x4E91;&#x8BA1;&#x7B97;&#x8BBE;&#x8BA1;&#x7684;&#x9759;&#x6001; IPv4 &#x5730;&#x5740;&#x3002;&#x5F39;&#x6027; IP &#x5730;&#x5740;&#x4E0E;&#x60A8;&#x7684; AWS &#x8D26;&#x6237;&#x5173;&#x8054;&#x3002;&#x501F;&#x52A9;&#x5F39;&#x6027; IP &#x5730;&#x5740;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5C06;&#x5730;&#x5740;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x5230;&#x60A8;&#x7684;&#x8D26;&#x6237;&#x4E2D;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x4ECE;&#x800C;&#x5C4F;&#x853D;&#x5B9E;&#x4F8B;&#x6545;&#x969C;&#x3002;</p>
-<p><strong>1.&#x8FDB;&#x5165;EC2&#x63A7;&#x5236;&#x53F0;</strong></p>
-<p>&#x6253;&#x5F00; Amazon EC2 &#x63A7;&#x5236;&#x53F0; <a href="https://console.aws.amazon.com/ec2/" target="_blank">https://console.aws.amazon.com/ec2/</a></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/1.png" alt=""></p>
-<p><strong>2.&#x5206;&#x914D;&#x65B0;&#x5730;&#x5740;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/2.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/3.png" alt=""></p>
-<p><strong>3.&#x628A;&#x5206;&#x914D;&#x7684;&#x5730;&#x5740;&#x4E0E;EC2&#x5173;&#x8054;</strong></p>
-<p>&#x9009;&#x4E2D;&#x9700;&#x8981;&#x5173;&#x8054;&#x7684;eip&#xFF0C;&#x9009;&#x62E9;&#x64CD;&#x4F5C;&#xFF0C;&#x5173;&#x8054;&#x5730;&#x5740;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/4.png" alt=""></p>
-<p><strong>4.&#x5173;&#x8054;&#x5730;&#x5740;</strong></p>
-<p>&#x9009;&#x62E9;&#x8D44;&#x6E90;&#x7C7B;&#x578B;&#xFF1A;&#x5B9E;&#x4F8B;</p>
-<p>&#x5B9E;&#x4F8B;&#xFF1A;&#x9700;&#x8981;&#x7ED1;&#x5B9A;eip&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x5B9E;&#x4F8B;&#x5907;&#x6CE8;name&#x8FD9;&#x91CC;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x51FA;&#x6765;</p>
-<p>&#x79C1;&#x6709;IP&#xFF1A;&#x8FD9;&#x8FB9;&#x4F1A;&#x5728;&#x4F60;&#x9009;&#x4E2D;&#x76F8;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x540E;&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x5B83;&#x7684;&#x79C1;&#x6709;IP&#x5730;&#x5740;</p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/5.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/6.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/7.png" alt=""></p>
-<p><strong>5.&#x5173;&#x8054;&#x6210;&#x529F;</strong></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/8.png" alt=""></p>
-<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/9.png" alt=""></p>
+                                <h1 id="&#x4EC0;&#x4E48;&#x662F;ec2">&#x4EC0;&#x4E48;&#x662F;EC2</h1>
+<blockquote>
+<p>Amazon Elastic Compute Cloud (Amazon EC2) &#x5728; Amazon Web Services (AWS) &#x4E91;&#x4E2D;&#x63D0;&#x4F9B;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x8BA1;&#x7B97;&#x5BB9;&#x91CF;&#x3002;&#x4F7F;&#x7528; Amazon EC2 &#x53EF;&#x907F;&#x514D;&#x524D;&#x671F;&#x7684;&#x786C;&#x4EF6;&#x6295;&#x5165;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x548C;&#x90E8;&#x7F72;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528; Amazon EC2&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x9700;&#x8981;&#x542F;&#x52A8;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x865A;&#x62DF;&#x670D;&#x52A1;&#x5668;&#x3001;&#x914D;&#x7F6E;&#x5B89;&#x5168;&#x548C;&#x7F51;&#x7EDC;&#x4EE5;&#x53CA;&#x7BA1;&#x7406;&#x5B58;&#x50A8;&#x3002;Amazon EC2 &#x5141;&#x8BB8;&#x60A8;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x7F29;&#x653E;&#x4EE5;&#x5E94;&#x5BF9;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x6216;&#x6D41;&#x884C;&#x9AD8;&#x5CF0;&#xFF0C;&#x964D;&#x4F4E;&#x6D41;&#x91CF;&#x9884;&#x6D4B;&#x9700;&#x6C42;&#x3002;</p>
+</blockquote>
+<p>Amazon EC2 &#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x8BA1;&#x7B97;&#x73AF;&#x5883;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;</li>
+<li>&#x5B9E;&#x4F8B;&#x7684;&#x9884;&#x914D;&#x7F6E;&#x6A21;&#x677F;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A; Amazon &#x7CFB;&#x7EDF;&#x6620;&#x50CF; (AMI)&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x60A8;&#x7684;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x7684;&#x7A0B;&#x5E8F;&#x5305;&#xFF08;&#x5305;&#x62EC;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#xFF09;&#x3002;</li>
+<li>&#x5B9E;&#x4F8B; CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x5B58;&#x50A8;&#x548C;&#x7F51;&#x7EDC;&#x5BB9;&#x91CF;&#x7684;&#x591A;&#x79CD;&#x914D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;</li>
+<li>&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x5BF9;&#x7684;&#x5B9E;&#x4F8B;&#x7684;&#x5B89;&#x5168;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#xFF08;AWS &#x5B58;&#x50A8;&#x516C;&#x6709;&#x5BC6;&#x94A5;&#xFF0C;&#x60A8;&#x5728;&#x5B89;&#x5168;&#x4F4D;&#x7F6E;&#x5B58;&#x50A8;&#x79C1;&#x6709;&#x5BC6;&#x94A5;&#xFF09;</li>
+<li>&#x4E34;&#x65F6;&#x6570;&#x636E;&#xFF08;&#x505C;&#x6B62;&#x6216;&#x7EC8;&#x6B62;&#x5B9E;&#x4F8B;&#x65F6;&#x4F1A;&#x5220;&#x9664;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#xFF09;&#x7684;&#x5B58;&#x50A8;&#x5377;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x5B58;&#x50A8;&#x5377;</li>
+<li>&#x4F7F;&#x7528; Amazon Elastic Block Store (Amazon EBS) &#x7684;&#x6570;&#x636E;&#x7684;&#x6301;&#x4E45;&#x6027;&#x5B58;&#x50A8;&#x5377;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A; Amazon EBS &#x5377;&#x3002;</li>
+<li>&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8D44;&#x6E90;&#x7684;&#x591A;&#x4E2A;&#x7269;&#x7406;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F8B;&#x5982;&#x5B9E;&#x4F8B;&#x548C; Amazon EBS &#x5377;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;<em>&#x533A;&#x57DF;</em> &#x548C;<em>&#x53EF;&#x7528;&#x533A;</em></li>
+<li>&#x9632;&#x706B;&#x5899;&#xFF0C;&#x8BA9;&#x60A8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x534F;&#x8BAE;&#x3001;&#x7AEF;&#x53E3;&#xFF0C;&#x4EE5;&#x53CA;&#x80FD;&#x591F;&#x4F7F;&#x7528;<em>&#x5B89;&#x5168;&#x7EC4;</em>&#x5230;&#x8FBE;&#x60A8;&#x7684;&#x5B9E;&#x4F8B;&#x7684;&#x6E90; IP &#x8303;&#x56F4;</li>
+<li>&#x7528;&#x4E8E;&#x52A8;&#x6001;&#x4E91;&#x8BA1;&#x7B97;&#x7684;&#x9759;&#x6001; IPv4 &#x5730;&#x5740;&#xFF0C;&#x79F0;&#x4E3A;&#x5F39;&#x6027; IP &#x5730;&#x5740;</li>
+<li>&#x5143;&#x6570;&#x636E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6807;&#x7B7E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x5143;&#x6570;&#x636E;&#x5E76;&#x5206;&#x914D;&#x7ED9;&#x60A8;&#x7684; Amazon EC2 &#x8D44;&#x6E90;</li>
+<li>&#x60A8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x7684;&#x865A;&#x62DF;&#x7F51;&#x7EDC;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F51;&#x7EDC;&#x4E0E;&#x5176;&#x4F59; AWS &#x4E91;&#x5728;&#x903B;&#x8F91;&#x4E0A;&#x9694;&#x79BB;&#xFF0C;&#x5E76;&#x4E14;&#x60A8;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x8FDE;&#x63A5;&#x5230;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A; Virtual Private Cloud (VPC)</li>
+</ul>
 
                                 
                                 </section>
@@ -1476,12 +1473,12 @@
 
             
                 
-                <a href="how-to-choose-instance-types-and-instance purchasing-options.html" class="navigation navigation-prev " aria-label="Previous page: 如何选择实例类型和购买选项">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 计算">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="what-is-the-elb.html" class="navigation navigation-next " aria-label="Next page: 如何理解负载均衡器（ELB）">
+                <a href="how-to-launch-ec2-instance.html" class="navigation navigation-next " aria-label="Next page: 如何启动一个EC2实例">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1492,7 +1489,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何分配弹性IP（EIP），并绑定到EC2实例","level":"1.3.1.6","depth":3,"next":{"title":"如何理解负载均衡器（ELB）","level":"1.3.1.7","depth":3,"path":"docs/compute/what-is-the-elb.md","ref":"docs/compute/what-is-the-elb.md","articles":[]},"previous":{"title":"如何选择实例类型和购买选项","level":"1.3.1.5","depth":3,"path":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","ref":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro","donate","livereload"],"pluginsConfig":{"emphasize":{},"livereload":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"http://image.iroogoo.com/pay/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.iroogoo.com/pay/htea.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how-do-I-allocate-eip-and-bind-to-ec2.md","mtime":"2019-11-04T06:01:34.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-11T10:25:37.356Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amazon EC2","level":"1.3.1","depth":2,"next":{"title":"如何启动一个EC2实例","level":"1.3.1.1","depth":3,"path":"docs/compute/how-to-launch-ec2-instance.md","ref":"docs/compute/how-to-launch-ec2-instance.md","articles":[]},"previous":{"title":"计算","level":"1.3","depth":1,"path":"docs/compute/README.md","ref":"docs/compute/README.md","articles":[{"title":"Amazon EC2","level":"1.3.1","depth":2,"path":"docs/compute/what-is-the-ec2.md","ref":"docs/compute/what-is-the-ec2.md","articles":[{"title":"如何启动一个EC2实例","level":"1.3.1.1","depth":3,"path":"docs/compute/how-to-launch-ec2-instance.md","ref":"docs/compute/how-to-launch-ec2-instance.md","articles":[]},{"title":"如何选择AMI镜像","level":"1.3.1.2","depth":3,"path":"docs/compute/how-choose-ami.md","ref":"docs/compute/how-choose-ami.md","articles":[]},{"title":"如何远程连接创建的EC2实例","level":"1.3.1.3","depth":3,"path":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","ref":"docs/compute/How_do_I_remotely_connect_to_create_an_ec2_instance.md","articles":[]},{"title":"如何使用密码登陆EC2实例","level":"1.3.1.4","depth":3,"path":"docs/compute/how-to-login-ec2-with-password.md","ref":"docs/compute/how-to-login-ec2-with-password.md","articles":[]},{"title":"如何选择实例类型和购买选项","level":"1.3.1.5","depth":3,"path":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","ref":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","articles":[]},{"title":"如何分配弹性IP（EIP），并绑定到EC2实例","level":"1.3.1.6","depth":3,"path":"docs/compute/how-do-I-allocate-eip-and-bind-to-ec2.md","ref":"docs/compute/how-do-I-allocate-eip-and-bind-to-ec2.md","articles":[]},{"title":"如何理解负载均衡器（ELB）","level":"1.3.1.7","depth":3,"path":"docs/compute/what-is-the-elb.md","ref":"docs/compute/what-is-the-elb.md","articles":[]},{"title":"如何创建ALB-应用程序负载均衡","level":"1.3.1.8","depth":3,"path":"docs/compute/how-to-create-alb.md","ref":"docs/compute/how-to-create-alb.md","articles":[]},{"title":"如何创建NLB-网络负载均衡器","level":"1.3.1.9","depth":3,"ref":"","articles":[]},{"title":"如何变更EC2实例类型","level":"1.3.1.10","depth":3,"path":"docs/compute/how-change-ec2-type.md","ref":"docs/compute/how-change-ec2-type.md","articles":[]},{"title":"如何创建AMI（EC2实例镜像）","level":"1.3.1.11","depth":3,"path":"docs/compute/how-to-create-ami.md","ref":"docs/compute/how-to-create-ami.md","articles":[]},{"title":"如何把AMI复制到其他区域","level":"1.3.1.12","depth":3,"path":"docs/compute/how-to-ami-copy-to-other-region.md","ref":"docs/compute/how-to-ami-copy-to-other-region.md","articles":[]},{"title":"如何分享AMI给其他账号使用","level":"1.3.1.13","depth":3,"ref":"","articles":[]},{"title":"如何挂载EBS到EC2实例上","level":"1.3.1.14","depth":3,"ref":"","articles":[]},{"title":"如何加密AMI、EBS、S3等数据","level":"1.3.1.15","depth":3,"ref":"","articles":[]},{"title":"如何理解安全组和NACL","level":"1.3.1.16","depth":3,"ref":"","articles":[]}]},{"title":"AWS Batch","level":"1.3.2","depth":2,"ref":"","articles":[]},{"title":"Amazon ECR","level":"1.3.3","depth":2,"path":"docs/compute/amazon-ecr.md","ref":"docs/compute/amazon-ecr.md","articles":[]},{"title":"Amazon ECS","level":"1.3.4","depth":2,"path":"docs/compute/amazon-ecs.md","ref":"docs/compute/amazon-ecs.md","articles":[]},{"title":"Amazon EKS","level":"1.3.5","depth":2,"path":"docs/compute/amazon-eks.md","ref":"docs/compute/amazon-eks.md","articles":[]},{"title":"AWS Elastic Beanstalk","level":"1.3.6","depth":2,"ref":"","articles":[]},{"title":"AWS Lambda","level":"1.3.7","depth":2,"ref":"","articles":[]},{"title":"Amazon Lightsail","level":"1.3.8","depth":2,"path":"docs/compute/amazon-lightsail.md","ref":"docs/compute/amazon-lightsail.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro","donate","livereload"],"pluginsConfig":{"emphasize":{},"livereload":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"http://image.iroogoo.com/pay/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.iroogoo.com/pay/htea.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/what-is-the-ec2.md","mtime":"2019-11-10T09:12:25.921Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-11T10:25:37.356Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
