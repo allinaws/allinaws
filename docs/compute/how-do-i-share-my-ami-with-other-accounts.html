@@ -1,0 +1,1803 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何分享AMI给其他账号使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="how-to-ami-copy-to-other-region.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    AWS中文文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction/readme.html">
+            
+                <a href="../introduction/readme.html">
+            
+                    
+                    入门小知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../operations_management/console_view.html">
+            
+                <a href="../operations_management/console_view.html">
+            
+                    
+                    控制台介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../operations_management/bill_management.html">
+            
+                <a href="../operations_management/bill_management.html">
+            
+                    
+                    账单管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../operations_management/user-permissions-env.html">
+            
+                <a href="../operations_management/user-permissions-env.html">
+            
+                    
+                    工作环境、使用角色和所属权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../introduction/services-limits.html">
+            
+                <a href="../introduction/services-limits.html">
+            
+                    
+                    服务限制介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../introduction/aws-infrastructure.html">
+            
+                <a href="../introduction/aws-infrastructure.html">
+            
+                    
+                    AWS全球基础设施
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../introduction/aws-tips.html">
+            
+                <a href="../introduction/aws-tips.html">
+            
+                    
+                    AWS一些不必要知道的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="what-is-the-ec2.html">
+            
+                <a href="what-is-the-ec2.html">
+            
+                    
+                    Amazon EC2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="how-to-launch-ec2-instance.html">
+            
+                <a href="how-to-launch-ec2-instance.html">
+            
+                    
+                    如何启动一个EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="how-choose-ami.html">
+            
+                <a href="how-choose-ami.html">
+            
+                    
+                    如何选择AMI镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+            
+                <a href="How_do_I_remotely_connect_to_create_an_ec2_instance.html">
+            
+                    
+                    如何远程连接创建的EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="how-to-login-ec2-with-password.html">
+            
+                <a href="how-to-login-ec2-with-password.html">
+            
+                    
+                    如何使用密码登陆EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="how-to-choose-instance-types-and-instance purchasing-options.html">
+            
+                <a href="how-to-choose-instance-types-and-instance purchasing-options.html">
+            
+                    
+                    如何选择实例类型和购买选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="how-do-I-allocate-eip-and-bind-to-ec2.html">
+            
+                <a href="how-do-I-allocate-eip-and-bind-to-ec2.html">
+            
+                    
+                    如何分配弹性IP（EIP），并绑定到EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="what-is-the-elb.html">
+            
+                <a href="what-is-the-elb.html">
+            
+                    
+                    如何理解负载均衡器（ELB）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="how-to-create-alb.html">
+            
+                <a href="how-to-create-alb.html">
+            
+                    
+                    如何创建ALB-应用程序负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="how-to-create-nlb.html">
+            
+                <a href="how-to-create-nlb.html">
+            
+                    
+                    如何创建NLB-网络负载均衡器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="how-change-ec2-type.html">
+            
+                <a href="how-change-ec2-type.html">
+            
+                    
+                    如何变更EC2实例类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="how-to-create-ami.html">
+            
+                <a href="how-to-create-ami.html">
+            
+                    
+                    如何创建AMI（EC2实例镜像）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="how-to-ami-copy-to-other-region.html">
+            
+                <a href="how-to-ami-copy-to-other-region.html">
+            
+                    
+                    如何把AMI复制到其他区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.13" data-path="how-do-i-share-my-ami-with-other-accounts.html">
+            
+                <a href="how-do-i-share-my-ami-with-other-accounts.html">
+            
+                    
+                    如何分享AMI给其他账号使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" >
+            
+                <span>
+            
+                    
+                    如何加密AMI映像
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.15" data-path="How-do-I-extend-an-ebs-volume-linux-os.html">
+            
+                <a href="How-do-I-extend-an-ebs-volume-linux-os.html">
+            
+                    
+                    如何扩展EBS卷（Linux）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.16" >
+            
+                <span>
+            
+                    
+                    如何扩展EBS卷（Windows）
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.17" data-path="what-is-the-ebs-snapshots.html">
+            
+                <a href="what-is-the-ebs-snapshots.html">
+            
+                    
+                    EBS快照
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.18" data-path="how-is-sg.html">
+            
+                <a href="how-is-sg.html">
+            
+                    
+                    如何理解安全组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.19" data-path="how-is-the-acl.html">
+            
+                <a href="how-is-the-acl.html">
+            
+                    
+                    如何理解网络访问控制列表（NACL）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.20" >
+            
+                <span>
+            
+                    
+                    如何理解AWS 密钥对
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.21" >
+            
+                <span>
+            
+                    
+                    如何理解AWS网络接口
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    AWS Batch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="amazon-ecr.html">
+            
+                <a href="amazon-ecr.html">
+            
+                    
+                    Amazon ECR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="amazon-ecs.html">
+            
+                <a href="amazon-ecs.html">
+            
+                    
+                    Amazon ECS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="amazon-eks.html">
+            
+                <a href="amazon-eks.html">
+            
+                    
+                    Amazon EKS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" >
+            
+                <span>
+            
+                    
+                    AWS Elastic Beanstalk
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    AWS Lambda
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="amazon-lightsail.html">
+            
+                <a href="amazon-lightsail.html">
+            
+                    
+                    Amazon Lightsail
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../database/">
+            
+                <a href="../database/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../database/how-to-create-mysql.html">
+            
+                <a href="../database/how-to-create-mysql.html">
+            
+                    
+                    如何创建MySQL实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    如何创建Redis实例
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../database/how-to-modify-parameter-groups.html">
+            
+                <a href="../database/how-to-modify-parameter-groups.html">
+            
+                    
+                    如何修改参数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    如何设置只读副本
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../networking-contentdelivery/">
+            
+                <a href="../networking-contentdelivery/">
+            
+                    
+                    网络与内容分发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../networking-contentdelivery/what-is-the-vpc.html">
+            
+                <a href="../networking-contentdelivery/what-is-the-vpc.html">
+            
+                    
+                    如何理解Amazon VPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    如何创建自定义VPC
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    如何使用终端节点服务
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../networking-contentdelivery/route53.html">
+            
+                <a href="../networking-contentdelivery/route53.html">
+            
+                    
+                    如何使用Route53解析域名？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../networking-contentdelivery/vpcpeer.html">
+            
+                <a href="../networking-contentdelivery/vpcpeer.html">
+            
+                    
+                    如何创建对等连接（VPC Peer）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../networking-contentdelivery/vpcflowlog.html">
+            
+                <a href="../networking-contentdelivery/vpcflowlog.html">
+            
+                    
+                    如何开启VPC流日志（flow log）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    如何使用CloudFront
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    如何使用Cloudmap
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    如何使用APP Mesh
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../storage/">
+            
+                <a href="../storage/">
+            
+                    
+                    存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../storage/what-is-the-s3.html">
+            
+                <a href="../storage/what-is-the-s3.html">
+            
+                    
+                    如何理解使用S3服务（bucket）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../storage/How-do-I-upload-files-to-s3bucket.html">
+            
+                <a href="../storage/How-do-I-upload-files-to-s3bucket.html">
+            
+                    
+                    如何上传文件到S3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    如何下载文件活分享分享
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    如何理解文件夹（目录）
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../storage/how-do-use-s3-as-a-static-site.html">
+            
+                <a href="../storage/how-do-use-s3-as-a-static-site.html">
+            
+                    
+                    如何使用S3做静态网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    创建生命周期策略
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    启用或禁用版本控制
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" >
+            
+                <span>
+            
+                    
+                    启动默认加密
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" >
+            
+                <span>
+            
+                    
+                    启用服务器访问日志记录
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../security-identity-compliance/">
+            
+                <a href="../security-identity-compliance/">
+            
+                    
+                    安全性、身份与合规性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../security-identity-compliance/iam.html">
+            
+                <a href="../security-identity-compliance/iam.html">
+            
+                    
+                    如何理解IAM服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../security-identity-compliance/Create_an_IAM_user_and_log_into_the_console.html">
+            
+                <a href="../security-identity-compliance/Create_an_IAM_user_and_log_into_the_console.html">
+            
+                    
+                    创建IAM用户并登录控制台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../security-identity-compliance/how-to-create-group.html">
+            
+                <a href="../security-identity-compliance/how-to-create-group.html">
+            
+                    
+                    如何创建用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" >
+            
+                <span>
+            
+                    
+                    EC2实例如何配合角色执行操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <span>
+            
+                    
+                    如何申请HTTPS加密证书
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../security-identity-compliance/how-to-create-acm.html">
+            
+                <a href="../security-identity-compliance/how-to-create-acm.html">
+            
+                    
+                    如何申请AWS Certificate Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../security-identity-compliance/how-to-import-acm.html">
+            
+                <a href="../security-identity-compliance/how-to-import-acm.html">
+            
+                    
+                    如何导入外部HTTPS证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../security-identity-compliance/How-to-apply-for-AWS-ACM-in-aliyun.html">
+            
+                <a href="../security-identity-compliance/How-to-apply-for-AWS-ACM-in-aliyun.html">
+            
+                    
+                    域名在阿里云如何申请AWS ACM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" data-path="../security-identity-compliance/How-to-apply-for-AWS-ACM-at-godaddy.html">
+            
+                <a href="../security-identity-compliance/How-to-apply-for-AWS-ACM-at-godaddy.html">
+            
+                    
+                    域名在godaddy如何申请AWS ACM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.5" data-path="../security-identity-compliance/how-to-apply-for-aliyun-free-certificate-in-aws.html">
+            
+                <a href="../security-identity-compliance/how-to-apply-for-aliyun-free-certificate-in-aws.html">
+            
+                    
+                    域名在AWS如何申请阿里云免费证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.6" data-path="../security-identity-compliance/how-to-apply-for-qiniucloud-free-certificate-in-aws.html">
+            
+                <a href="../security-identity-compliance/how-to-apply-for-qiniucloud-free-certificate-in-aws.html">
+            
+                    
+                    域名在AWS如何申请七牛云免费证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../security-identity-compliance/iam-mfa.html">
+            
+                <a href="../security-identity-compliance/iam-mfa.html">
+            
+                    
+                    IAM用户启用MFA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../security-identity-compliance/guardduty.html">
+            
+                <a href="../security-identity-compliance/guardduty.html">
+            
+                    
+                    如何使用GuardDuty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" >
+            
+                <span>
+            
+                    
+                    如何使用Amazon Inspector
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../management-governance/">
+            
+                <a href="../management-governance/">
+            
+                    
+                    管理与监督
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../management-supervision/CloudTrail.md">
+            
+                <span>
+            
+                    
+                    如何使用CloudTrail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    如何使用Config
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" >
+            
+                <span>
+            
+                    
+                    如何使用CloudWatch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" >
+            
+                <span>
+            
+                    
+                    如何使用Cloudwatch Event
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" >
+            
+                <span>
+            
+                    
+                    如何使用Cloudwatch Log
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" >
+            
+                <span>
+            
+                    
+                    如何使用Trusted Advisor
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    最佳实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../best-practice/vpc.html">
+            
+                <a href="../best-practice/vpc.html">
+            
+                    
+                    VPC最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../best-practice/iam.html">
+            
+                <a href="../best-practice/iam.html">
+            
+                    
+                    IAM最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../best-practice/data.html">
+            
+                <a href="../best-practice/data.html">
+            
+                    
+                    数据安全最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../best-practice/ec2.html">
+            
+                <a href="../best-practice/ec2.html">
+            
+                    
+                    服务器安全最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../best-practice/monitoring-record-audit.html">
+            
+                <a href="../best-practice/monitoring-record-audit.html">
+            
+                    
+                    监控、记录和审计最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../white-paper/readme.html">
+            
+                <a href="../white-paper/readme.html">
+            
+                    
+                    AWS 白皮书学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../white-paper/well-architected-framework.html">
+            
+                <a href="../white-paper/well-architected-framework.html">
+            
+                    
+                    良好的框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../white-paper/shared-responsibility-model.html">
+            
+                <a href="../white-paper/shared-responsibility-model.html">
+            
+                    
+                    责任共担模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <a target="_blank" href="https://mubu.com/doc/iBgvGqM9V0">
+            
+                    
+                    AWS架构完善的框架–安全性支柱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../china/">
+            
+                <a href="../china/">
+            
+                    
+                    大中华区
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../china/sinnet.html">
+            
+                <a href="../china/sinnet.html">
+            
+                    
+                    光环新网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../china/nwcdcloud.html">
+            
+                <a href="../china/nwcdcloud.html">
+            
+                    
+                    西云数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../china/china-faq.html">
+            
+                <a href="../china/china-faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../case/">
+            
+                <a href="../case/">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../case/unable-to-ssh-remote-connection-to-ec2-instance.html">
+            
+                <a href="../case/unable-to-ssh-remote-connection-to-ec2-instance.html">
+            
+                    
+                    无法SSH连接到远程的EC2实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../case/windows-unable-to-generate-password.html">
+            
+                <a href="../case/windows-unable-to-generate-password.html">
+            
+                    
+                    Windows实例无法生成密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../case/how-to-change-vpc.html">
+            
+                <a href="../case/how-to-change-vpc.html">
+            
+                    
+                    如何把默认VPC的实例迁移到新的VPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../certification/">
+            
+                <a href="../certification/">
+            
+                    
+                    AWS认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../certification/registration-exam.html">
+            
+                <a href="../certification/registration-exam.html">
+            
+                    
+                    报考指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../aws-uniqueness.html">
+            
+                <a href="../aws-uniqueness.html">
+            
+                    
+                    AWS的独特之处是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../aws-leadership-qualifications.html">
+            
+                <a href="../aws-leadership-qualifications.html">
+            
+                    
+                    亚马逊14条领导力准则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../about-the-message.html">
+            
+                <a href="../about-the-message.html">
+            
+                    
+                    关于本文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >如何分享AMI给其他账号使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5982;&#x4F55;&#x5206;&#x4EAB;ami&#x7ED9;&#x5176;&#x4ED6;&#x8D26;&#x53F7;&#x4F7F;&#x7528;">&#x5982;&#x4F55;&#x5206;&#x4EAB;AMI&#x7ED9;&#x5176;&#x4ED6;&#x8D26;&#x53F7;&#x4F7F;&#x7528;</h1>
+<h2 id="&#x8D26;&#x53F7;a">&#x8D26;&#x53F7;A</h2>
+<p>&#x6253;&#x5F00; Amazon EC2 &#x63A7;&#x5236;&#x53F0; <a href="https://console.aws.amazon.com/ec2/&#x3002;" target="_blank">https://console.aws.amazon.com/ec2/&#x3002;</a></p>
+<p>&#x5728;&#x5BFC;&#x822A;&#x7A97;&#x683C;&#x4E2D;&#xFF0C;&#x9009;&#x62E9; AMIs&#x3002;</p>
+<p>&#x9009;&#x4E2D;&#x9700;&#x8981;&#x5206;&#x4EAB;&#x7684;AMI&#xFF0C;&#x6253;&#x5F00;&#x6743;&#x9650;&#x6309;&#x94AE;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/how-do-i-share-my-ami-with-other-accounts/1.png" alt=""></p>
+<p>&#x7F16;&#x8F91;&#x7BA1;&#x7406;&#x6620;&#x50CF;&#x6743;&#x9650;&#xFF0C;&#x9009;&#x4E2D;&#x79C1;&#x6709;&#xFF0C;&#x6DFB;&#x52A0;&#x6743;&#x9650;&#x8FD9;&#x91CC;&#x8F93;&#x5165;&#x5206;&#x4EAB;&#x7684;aws account ID</p>
+<p>&#x8981;&#x4E0E;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x5171;&#x4EAB;&#x6B64; AMI&#xFF0C;&#x8BF7;&#x91CD;&#x590D;&#x6B64;&#x6B65;&#x9AA4;&#xFF0C;&#x76F4;&#x81F3;&#x60A8;&#x6DFB;&#x52A0;&#x5B8C;&#x6240;&#x9700;&#x5168;&#x90E8;&#x7528;&#x6237;</p>
+<p>&#x6700;&#x540E;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/how-do-i-share-my-ami-with-other-accounts/2.png" alt=""></p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/how-do-i-share-my-ami-with-other-accounts/3.png" alt=""></p>
+<h2 id="&#x8D26;&#x53F7;-b">&#x8D26;&#x53F7; B</h2>
+<p>&#x6253;&#x5F00; Amazon EC2 &#x63A7;&#x5236;&#x53F0; <a href="https://console.aws.amazon.com/ec2/&#x3002;" target="_blank">https://console.aws.amazon.com/ec2/&#x3002;</a></p>
+<p>&#x5728;&#x5BFC;&#x822A;&#x7A97;&#x683C;&#x4E2D;&#xFF0C;&#x9009;&#x62E9; AMIs&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x9009;&#x4E2D;&#x79C1;&#x6709;&#x6620;&#x50CF;</p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/how-do-i-share-my-ami-with-other-accounts/4.png" alt=""></p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x5206;&#x4EAB;&#x8FC7;&#x6765;&#x7684;&#x6620;&#x50CF;&#x5DF2;&#x7ECF;&#x5230;&#x4E86;&#x4F60;&#x7684;&#x8D26;&#x53F7;&#x4E0A;&#x9762;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B64;&#x6620;&#x50CF;&#x542F;&#x52A8;&#x4E00;&#x4E2A;ec2&#x4E86; </p>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/how-do-i-share-my-ami-with-other-accounts/5.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how-to-ami-copy-to-other-region.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 如何把AMI复制到其他区域">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何分享AMI给其他账号使用","level":"1.3.1.13","depth":3,"next":{"title":"如何加密AMI映像","level":"1.3.1.14","depth":3,"ref":"","articles":[]},"previous":{"title":"如何把AMI复制到其他区域","level":"1.3.1.12","depth":3,"path":"docs/compute/how-to-ami-copy-to-other-region.md","ref":"docs/compute/how-to-ami-copy-to-other-region.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"images/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how-do-i-share-my-ami-with-other-accounts.md","mtime":"2019-12-05T03:20:05.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-06T03:11:14.957Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
