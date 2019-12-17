@@ -885,9 +885,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.2" data-path="../storage/How-do-I-upload-files-to-s3bucket.html">
+        <li class="chapter " data-level="1.6.1.2" data-path="../storage/how-to-upload-download-and-share-files.html">
             
-                <a href="../storage/How-do-I-upload-files-to-s3bucket.html">
+                <a href="../storage/how-to-upload-download-and-share-files.html">
             
                     
                     如何上传\下载\分享文件
@@ -1296,9 +1296,80 @@
                 <span>
             
                     
+                    EC2命令参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../../awscli/ec2/ec2-describe-instances.html">
+            
+                <a href="../../awscli/ec2/ec2-describe-instances.html">
+            
+                    
+                    实例描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../../awscli/ec2/ec2-run-instances.html">
+            
+                <a href="../../awscli/ec2/ec2-run-instances.html">
+            
+                    
+                    启动一个实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="../../awscli/ec2/ec2-starts-stops-restarts-terminates-instances.html">
+            
+                <a href="../../awscli/ec2/ec2-starts-stops-restarts-terminates-instances.html">
+            
+                    
+                    EC2启动/停止/重启/终止实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
                     S3命令参考
             
                 </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../awscli/vpc/s3.html">
+            
+                <a href="../../awscli/vpc/s3.html">
+            
+                    
+                    VPC命令参考
+            
+                </a>
             
 
             
@@ -1576,7 +1647,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5982;&#x4F55;&#x5206;&#x914D;eip&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;&#x5230;ec2">&#x5982;&#x4F55;&#x5206;&#x914D;EIP&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;&#x5230;EC2</h1>
+                                <h1 id="&#x5982;&#x4F55;&#x5BF9;eip&#x7BA1;&#x7406;&#x7533;&#x8BF7;&#x5173;&#x8054;&#x53D6;&#x6D88;&#x5173;&#x8054;&#x91CA;&#x653E;">&#x5982;&#x4F55;&#x5BF9;EIP&#x7BA1;&#x7406;\&#x7533;&#x8BF7;\&#x5173;&#x8054;\&#x53D6;&#x6D88;&#x5173;&#x8054;\&#x91CA;&#x653E;</h1>
+<h2 id="&#x7533;&#x8BF7;&#xFF08;&#x5206;&#x914D;&#xFF09;eip&#x5E76;&#x5173;&#x8054;ec2&#x5B9E;&#x4F8B;">&#x7533;&#x8BF7;&#xFF08;&#x5206;&#x914D;&#xFF09;EIP&#x5E76;&#x5173;&#x8054;EC2&#x5B9E;&#x4F8B;</h2>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/how-do-I-allocate-eip-and-bind-to-ec2.gif" alt=""></p>
+<h2 id="&#x53D6;&#x6D88;&#x5173;&#x8054;eip">&#x53D6;&#x6D88;&#x5173;&#x8054;EIP</h2>
+<p><img src="https://awschinawiki.s3.cn-northwest-1.amazonaws.com.cn/docs/compute/eip/unassociating-eip.gif" alt="unassociating-eip"></p>
 <p>&#x5F39;&#x6027; IP &#x5730;&#x5740; &#x662F;&#x4E13;&#x4E3A;&#x52A8;&#x6001;&#x4E91;&#x8BA1;&#x7B97;&#x8BBE;&#x8BA1;&#x7684;&#x9759;&#x6001; IPv4 &#x5730;&#x5740;&#x3002;&#x5F39;&#x6027; IP &#x5730;&#x5740;&#x4E0E;&#x60A8;&#x7684; AWS &#x8D26;&#x6237;&#x5173;&#x8054;&#x3002;&#x501F;&#x52A9;&#x5F39;&#x6027; IP &#x5730;&#x5740;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5C06;&#x5730;&#x5740;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x5230;&#x60A8;&#x7684;&#x8D26;&#x6237;&#x4E2D;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x4ECE;&#x800C;&#x5C4F;&#x853D;&#x5B9E;&#x4F8B;&#x6545;&#x969C;&#x3002;</p>
 <p><strong>1.&#x8FDB;&#x5165;EC2&#x63A7;&#x5236;&#x53F0;</strong></p>
 <p>&#x6253;&#x5F00; Amazon EC2 &#x63A7;&#x5236;&#x53F0; <a href="https://console.aws.amazon.com/ec2/" target="_blank">https://console.aws.amazon.com/ec2/</a></p>
@@ -1656,7 +1731,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"如何分配弹性IP（EIP），并绑定到EC2实例","level":"1.3.1.6","depth":3,"next":{"title":"如何理解负载均衡器（ELB）","level":"1.3.1.7","depth":3,"path":"docs/compute/what-is-the-elb.md","ref":"docs/compute/what-is-the-elb.md","articles":[]},"previous":{"title":"如何选择实例类型和购买选项","level":"1.3.1.5","depth":3,"path":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","ref":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"images/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how-do-I-allocate-eip-and-bind-to-ec2.md","mtime":"2019-11-17T07:55:20.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T14:35:04.713Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何分配弹性IP（EIP），并绑定到EC2实例","level":"1.3.1.6","depth":3,"next":{"title":"如何理解负载均衡器（ELB）","level":"1.3.1.7","depth":3,"path":"docs/compute/what-is-the-elb.md","ref":"docs/compute/what-is-the-elb.md","articles":[]},"previous":{"title":"如何选择实例类型和购买选项","level":"1.3.1.5","depth":3,"path":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","ref":"docs/compute/how-to-choose-instance-types-and-instance purchasing-options.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","custom-favicon","pageview-count","splitter","emphasize","advanced-emoji","back-to-top-button","code","accordion","search-pro"],"pluginsConfig":{"emphasize":{},"splitter":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"images/favicon.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/compute/how-do-I-allocate-eip-and-bind-to-ec2.md","mtime":"2019-12-17T01:35:15.774Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-17T11:19:30.669Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
