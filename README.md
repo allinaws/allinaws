@@ -1,5 +1,5 @@
-# AWS 中文文档
+# AWS宝宝成长之路
 
-访问地址：https://awschina.wiki/
+访问地址：https://aws.baby
 
-文档内容持续更新中，如有侵权请与我联系～
+文档内容持续更新中~
