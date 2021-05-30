@@ -2,38 +2,25 @@
 <div align='center' ><font size='70'>欢迎加群一起学习AWS知识</font></div>
 
 
-<section id="nice" data-tool="mdnice编辑器" data-website="https://www.mdnice.com" style="font-size:16px;
-	color:black;
-	padding:0 10px;
-	line-height:1.6;
-	word-spacing:0px;
-	letter-spacing:0px;
-	word-break:break-word;
-	word-wrap:break-word;
-	text-align:left;
-	font-family:Optima-Regular,Optima,PingFangSC-light,PingFangTC-light,'PingFang SC',Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
-	"><figure data-tool="mdnice编辑器" style="margin:0;
-	margin-top:10px;
-	margin-bottom:10px;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-	"><img src="https://img2020.cnblogs.com/blog/1043682/202105/1043682-20210530180116022-2046858908.png" alt style="display:block;
-	margin:0 auto;
-	max-width:100%;
-	"></figure>
+<div style="align: center">
+<img src="https://img2020.cnblogs.com/blog/1043682/202105/1043682-20210530180116022-2046858908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
+</div>
 
 
 ## AWS 基础入门
 
+
 **首先，你要先注册一个AWS账号**
+
 
 [AWS 账号申请](https://www.cnblogs.com/syavingcs/p/14563063.html)
 
+
 [AWS 1美刀预授权](https://www.cnblogs.com/syavingcs/p/14513137.html)
 
+
 [AWS 账单管理](https://www.cnblogs.com/syavingcs/p/14647594.html)
+
 
 [AWS 账单扣款失败如何处理](https://www.cnblogs.com/syavingcs/p/14742738.html)
 
